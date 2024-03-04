@@ -6,7 +6,7 @@
   <p>Para compilar a Linguagem DAS, você precisa usar o seguinte comando:</p>
 
   <pre><code>antlr4 -Dlanguage=CSharp DAS.g4</code></pre>
-  <p>Este comando irá gerar a pasta Grammar contendo LangLexer.cs, LangParser.cs e LangVisitor.cs.</p>
+  <p>Este comando irá gerar a pasta Grammar contendo DASLexer.cs, DASParser.cs e DASVisitor.cs.</p>
 
   <h2>Sintaxe da Linguagem DAS</h2>
   <p>A linguagem de programação DAS possui as seguintes estruturas de controle:</p>
@@ -89,8 +89,8 @@ numero read y;
 
 write "começo do FOR";
 for(numero i; i < 10; numero i = i + 1){
-    numero x = (x + 1);
-    write x;
+numero x = (x + 1);
+write x;
 };
 
 write "informe um número:";
@@ -100,8 +100,8 @@ numero read y;
 
 write "começo do WHILE";
 while(i < 10){
-    numero x = (x + 1);
-    write x;
+numero x = (x + 1);
+write x;
 };
 
 write "informe um número:";
@@ -111,8 +111,8 @@ numero read y;
 
 write "Começo DoWhile";
 do {
-    numero x = x + 1;
-    write x;
+numero x = x + 1;
+write x;
 }
 while (i < 10);
 
@@ -121,15 +121,15 @@ numero read x;
 write "informe outro número:";
 numero read y;
 if (x > y) then {
-  write "X é maior que Y";
-} else { 
-  if (x < y) then {
-    write "Y é maior que X";
-  } else {
-    write "Y e X são iguais"; 
-  }
+write "X é maior que Y";
+} else {
+if (x < y) then {
+write "Y é maior que X";
+} else {
+write "Y e X são iguais";
 }
-  </code></pre>
+}
+</code></pre>
 
   <h2>Conclusion</h2>
  <h1 align="center">Relatório de Construção do DAS Compiler com ANTLR4</h1>
