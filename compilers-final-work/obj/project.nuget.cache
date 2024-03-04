@@ -1,14 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "qnTDdrbF8jWVU3IQQpnQQtnrPJ8LL+24phsI40EB/KzDYT9B4PHEWP409FYdQL+a/I0VBcgVOIz+9+oW8Z7+iA==",
+  "dgSpecHash": "Q3kPal0Y+bizK07hNpZSbc8ThrB2el/3B3mbmy0nuMfVcD3FnrwDAISq3sS8m57u37i72EUwxiwncghJni7hgg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\andre\\Downloads\\BLG-Compiler-main\\C#-Aula\\compilers-final-work\\compilers-final-work.csproj",
+  "projectFilePath": "/home/davi/Downloads/compiladores/compilers-final-work/compilers-final-work.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\andre\\.nuget\\packages\\antlr4.runtime.standard\\4.9.2\\antlr4.runtime.standard.4.9.2.nupkg.sha512",
-    "C:\\Users\\andre\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\andre\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\andre\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\andre\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.26\\microsoft.netcore.app.host.win-x64.6.0.26.nupkg.sha512"
+    "/home/davi/.nuget/packages/antlr4.runtime.standard/4.9.2/antlr4.runtime.standard.4.9.2.nupkg.sha512",
+    "/home/davi/.nuget/packages/microsoft.netcore.app.ref/6.0.25/microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "/home/davi/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.25/microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
+    "/home/davi/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.25/microsoft.netcore.app.host.linux-x64.6.0.25.nupkg.sha512"
   ],
   "logs": []
 }

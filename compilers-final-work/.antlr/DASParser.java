@@ -1,4 +1,4 @@
-// Generated from c:/Users/andre/Downloads/BLG-Compiler-main/C#-Aula/compilers-final-work/Lang.g4 by ANTLR 4.13.1
+// Generated from c:/Users/andre/Downloads/BLG-Compiler-main/C#-Aula/compilers-final-work/DAS.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -9,7 +9,7 @@ import java.util.Iterator;
 import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast", "CheckReturnValue"})
-public class LangParser extends Parser {
+public class DASParser extends Parser {
 	static { RuntimeMetaData.checkVersion("4.13.1", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
@@ -89,7 +89,7 @@ public class LangParser extends Parser {
 	}
 
 	@Override
-	public String getGrammarFileName() { return "Lang.g4"; }
+	public String getGrammarFileName() { return "DAS.g4"; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }
@@ -100,7 +100,7 @@ public class LangParser extends Parser {
 	@Override
 	public ATN getATN() { return _ATN; }
 
-	public LangParser(TokenStream input) {
+	public DASParser(TokenStream input) {
 		super(input);
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
@@ -228,13 +228,13 @@ public class LangParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class FunctionContext extends ParserRuleContext {
-		public TerminalNode FUNCTION() { return getToken(LangParser.FUNCTION, 0); }
-		public TerminalNode VAR() { return getToken(LangParser.VAR, 0); }
-		public TerminalNode OE() { return getToken(LangParser.OE, 0); }
+		public TerminalNode FUNCTION() { return getToken(DASParser.FUNCTION, 0); }
+		public TerminalNode VAR() { return getToken(DASParser.VAR, 0); }
+		public TerminalNode OE() { return getToken(DASParser.OE, 0); }
 		public ParamsContext params() {
 			return getRuleContext(ParamsContext.class,0);
 		}
-		public TerminalNode CE() { return getToken(LangParser.CE, 0); }
+		public TerminalNode CE() { return getToken(DASParser.CE, 0); }
 		public FnBlockContext fnBlock() {
 			return getRuleContext(FnBlockContext.class,0);
 		}
@@ -335,8 +335,8 @@ public class LangParser extends Parser {
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class FnReturnLineContext extends FnBodyContext {
-		public TerminalNode RETURN() { return getToken(LangParser.RETURN, 0); }
-		public TerminalNode EOL() { return getToken(LangParser.EOL, 0); }
+		public TerminalNode RETURN() { return getToken(DASParser.RETURN, 0); }
+		public TerminalNode EOL() { return getToken(DASParser.EOL, 0); }
 		public FnReturnLineContext(FnBodyContext ctx) { copyFrom(ctx); }
 	}
 	@SuppressWarnings("CheckReturnValue")
@@ -348,11 +348,11 @@ public class LangParser extends Parser {
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class FnReturnExprLineContext extends FnBodyContext {
-		public TerminalNode RETURN() { return getToken(LangParser.RETURN, 0); }
+		public TerminalNode RETURN() { return getToken(DASParser.RETURN, 0); }
 		public ExprContext expr() {
 			return getRuleContext(ExprContext.class,0);
 		}
-		public TerminalNode EOL() { return getToken(LangParser.EOL, 0); }
+		public TerminalNode EOL() { return getToken(DASParser.EOL, 0); }
 		public FnReturnExprLineContext(FnBodyContext ctx) { copyFrom(ctx); }
 	}
 	@SuppressWarnings("CheckReturnValue")
@@ -428,8 +428,8 @@ public class LangParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class ParamsContext extends ParserRuleContext {
-		public TerminalNode VAR() { return getToken(LangParser.VAR, 0); }
-		public TerminalNode SEP() { return getToken(LangParser.SEP, 0); }
+		public TerminalNode VAR() { return getToken(DASParser.VAR, 0); }
+		public TerminalNode SEP() { return getToken(DASParser.SEP, 0); }
 		public ParamsContext params() {
 			return getRuleContext(ParamsContext.class,0);
 		}
@@ -503,7 +503,7 @@ public class LangParser extends Parser {
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class LineEOLContext extends LineContext {
-		public TerminalNode EOL() { return getToken(LangParser.EOL, 0); }
+		public TerminalNode EOL() { return getToken(DASParser.EOL, 0); }
 		public LineEOLContext(LineContext ctx) { copyFrom(ctx); }
 	}
 	@SuppressWarnings("CheckReturnValue")
@@ -511,7 +511,7 @@ public class LangParser extends Parser {
 		public StmtContext stmt() {
 			return getRuleContext(StmtContext.class,0);
 		}
-		public TerminalNode EOL() { return getToken(LangParser.EOL, 0); }
+		public TerminalNode EOL() { return getToken(DASParser.EOL, 0); }
 		public LineStmtContext(LineContext ctx) { copyFrom(ctx); }
 	}
 	@SuppressWarnings("CheckReturnValue")
@@ -611,12 +611,12 @@ public class LangParser extends Parser {
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class FuncInvocLineContext extends FuncInvocContext {
-		public TerminalNode VAR() { return getToken(LangParser.VAR, 0); }
-		public TerminalNode OE() { return getToken(LangParser.OE, 0); }
+		public TerminalNode VAR() { return getToken(DASParser.VAR, 0); }
+		public TerminalNode OE() { return getToken(DASParser.OE, 0); }
 		public ParamsContext params() {
 			return getRuleContext(ParamsContext.class,0);
 		}
-		public TerminalNode CE() { return getToken(LangParser.CE, 0); }
+		public TerminalNode CE() { return getToken(DASParser.CE, 0); }
 		public FuncInvocLineContext(FuncInvocContext ctx) { copyFrom(ctx); }
 	}
 
@@ -758,8 +758,8 @@ public class LangParser extends Parser {
 		public TipoContext tipo() {
 			return getRuleContext(TipoContext.class,0);
 		}
-		public TerminalNode READ() { return getToken(LangParser.READ, 0); }
-		public TerminalNode VAR() { return getToken(LangParser.VAR, 0); }
+		public TerminalNode READ() { return getToken(DASParser.READ, 0); }
+		public TerminalNode VAR() { return getToken(DASParser.VAR, 0); }
 		public InputReadContext(InputContext ctx) { copyFrom(ctx); }
 	}
 
@@ -803,19 +803,19 @@ public class LangParser extends Parser {
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class OutputWriteStrContext extends OutputContext {
-		public TerminalNode WRITE() { return getToken(LangParser.WRITE, 0); }
-		public TerminalNode STR() { return getToken(LangParser.STR, 0); }
+		public TerminalNode WRITE() { return getToken(DASParser.WRITE, 0); }
+		public TerminalNode STR() { return getToken(DASParser.STR, 0); }
 		public OutputWriteStrContext(OutputContext ctx) { copyFrom(ctx); }
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class OutputWriteVarContext extends OutputContext {
-		public TerminalNode WRITE() { return getToken(LangParser.WRITE, 0); }
-		public TerminalNode VAR() { return getToken(LangParser.VAR, 0); }
+		public TerminalNode WRITE() { return getToken(DASParser.WRITE, 0); }
+		public TerminalNode VAR() { return getToken(DASParser.VAR, 0); }
 		public OutputWriteVarContext(OutputContext ctx) { copyFrom(ctx); }
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class OutputWriteExprContext extends OutputContext {
-		public TerminalNode WRITE() { return getToken(LangParser.WRITE, 0); }
+		public TerminalNode WRITE() { return getToken(DASParser.WRITE, 0); }
 		public ExprContext expr() {
 			return getRuleContext(ExprContext.class,0);
 		}
@@ -947,14 +947,14 @@ public class LangParser extends Parser {
 	public static class IfstIfElseContext extends IfstContext {
 		public BlockContext b1;
 		public BlockContext b2;
-		public TerminalNode IF() { return getToken(LangParser.IF, 0); }
-		public TerminalNode OE() { return getToken(LangParser.OE, 0); }
+		public TerminalNode IF() { return getToken(DASParser.IF, 0); }
+		public TerminalNode OE() { return getToken(DASParser.OE, 0); }
 		public CondContext cond() {
 			return getRuleContext(CondContext.class,0);
 		}
-		public TerminalNode CE() { return getToken(LangParser.CE, 0); }
-		public TerminalNode THEN() { return getToken(LangParser.THEN, 0); }
-		public TerminalNode ELSE() { return getToken(LangParser.ELSE, 0); }
+		public TerminalNode CE() { return getToken(DASParser.CE, 0); }
+		public TerminalNode THEN() { return getToken(DASParser.THEN, 0); }
+		public TerminalNode ELSE() { return getToken(DASParser.ELSE, 0); }
 		public List<BlockContext> block() {
 			return getRuleContexts(BlockContext.class);
 		}
@@ -965,13 +965,13 @@ public class LangParser extends Parser {
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class IfstIfContext extends IfstContext {
-		public TerminalNode IF() { return getToken(LangParser.IF, 0); }
-		public TerminalNode OE() { return getToken(LangParser.OE, 0); }
+		public TerminalNode IF() { return getToken(DASParser.IF, 0); }
+		public TerminalNode OE() { return getToken(DASParser.OE, 0); }
 		public CondContext cond() {
 			return getRuleContext(CondContext.class,0);
 		}
-		public TerminalNode CE() { return getToken(LangParser.CE, 0); }
-		public TerminalNode THEN() { return getToken(LangParser.THEN, 0); }
+		public TerminalNode CE() { return getToken(DASParser.CE, 0); }
+		public TerminalNode THEN() { return getToken(DASParser.THEN, 0); }
 		public BlockContext block() {
 			return getRuleContext(BlockContext.class,0);
 		}
@@ -1052,26 +1052,26 @@ public class LangParser extends Parser {
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class WhilestDoWhileContext extends WhilestContext {
-		public TerminalNode DO() { return getToken(LangParser.DO, 0); }
+		public TerminalNode DO() { return getToken(DASParser.DO, 0); }
 		public BlockContext block() {
 			return getRuleContext(BlockContext.class,0);
 		}
-		public TerminalNode WHILE() { return getToken(LangParser.WHILE, 0); }
-		public TerminalNode OE() { return getToken(LangParser.OE, 0); }
+		public TerminalNode WHILE() { return getToken(DASParser.WHILE, 0); }
+		public TerminalNode OE() { return getToken(DASParser.OE, 0); }
 		public CondContext cond() {
 			return getRuleContext(CondContext.class,0);
 		}
-		public TerminalNode CE() { return getToken(LangParser.CE, 0); }
+		public TerminalNode CE() { return getToken(DASParser.CE, 0); }
 		public WhilestDoWhileContext(WhilestContext ctx) { copyFrom(ctx); }
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class WhilestWhileContext extends WhilestContext {
-		public TerminalNode WHILE() { return getToken(LangParser.WHILE, 0); }
-		public TerminalNode OE() { return getToken(LangParser.OE, 0); }
+		public TerminalNode WHILE() { return getToken(DASParser.WHILE, 0); }
+		public TerminalNode OE() { return getToken(DASParser.OE, 0); }
 		public CondContext cond() {
 			return getRuleContext(CondContext.class,0);
 		}
-		public TerminalNode CE() { return getToken(LangParser.CE, 0); }
+		public TerminalNode CE() { return getToken(DASParser.CE, 0); }
 		public BlockContext block() {
 			return getRuleContext(BlockContext.class,0);
 		}
@@ -1148,13 +1148,13 @@ public class LangParser extends Parser {
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class ForstForContext extends ForstContext {
-		public TerminalNode FOR() { return getToken(LangParser.FOR, 0); }
-		public TerminalNode OE() { return getToken(LangParser.OE, 0); }
-		public List<TerminalNode> EOL() { return getTokens(LangParser.EOL); }
+		public TerminalNode FOR() { return getToken(DASParser.FOR, 0); }
+		public TerminalNode OE() { return getToken(DASParser.OE, 0); }
+		public List<TerminalNode> EOL() { return getTokens(DASParser.EOL); }
 		public TerminalNode EOL(int i) {
-			return getToken(LangParser.EOL, i);
+			return getToken(DASParser.EOL, i);
 		}
-		public TerminalNode CE() { return getToken(LangParser.CE, 0); }
+		public TerminalNode CE() { return getToken(DASParser.CE, 0); }
 		public BlockContext block() {
 			return getRuleContext(BlockContext.class,0);
 		}
@@ -1318,12 +1318,12 @@ public class LangParser extends Parser {
 		public ExprContext expr(int i) {
 			return getRuleContext(ExprContext.class,i);
 		}
-		public TerminalNode EQ() { return getToken(LangParser.EQ, 0); }
-		public TerminalNode NE() { return getToken(LangParser.NE, 0); }
-		public TerminalNode LT() { return getToken(LangParser.LT, 0); }
-		public TerminalNode GT() { return getToken(LangParser.GT, 0); }
-		public TerminalNode LE() { return getToken(LangParser.LE, 0); }
-		public TerminalNode GE() { return getToken(LangParser.GE, 0); }
+		public TerminalNode EQ() { return getToken(DASParser.EQ, 0); }
+		public TerminalNode NE() { return getToken(DASParser.NE, 0); }
+		public TerminalNode LT() { return getToken(DASParser.LT, 0); }
+		public TerminalNode GT() { return getToken(DASParser.GT, 0); }
+		public TerminalNode LE() { return getToken(DASParser.LE, 0); }
+		public TerminalNode GE() { return getToken(DASParser.GE, 0); }
 		public CondRelopContext(CondContext ctx) { copyFrom(ctx); }
 	}
 	@SuppressWarnings("CheckReturnValue")
@@ -1337,7 +1337,7 @@ public class LangParser extends Parser {
 	public static class CondAndContext extends CondContext {
 		public CondContext c1;
 		public CondContext c2;
-		public TerminalNode AND() { return getToken(LangParser.AND, 0); }
+		public TerminalNode AND() { return getToken(DASParser.AND, 0); }
 		public List<CondContext> cond() {
 			return getRuleContexts(CondContext.class);
 		}
@@ -1350,7 +1350,7 @@ public class LangParser extends Parser {
 	public static class CondOrContext extends CondContext {
 		public CondContext c1;
 		public CondContext c2;
-		public TerminalNode OR() { return getToken(LangParser.OR, 0); }
+		public TerminalNode OR() { return getToken(DASParser.OR, 0); }
 		public List<CondContext> cond() {
 			return getRuleContexts(CondContext.class);
 		}
@@ -1361,7 +1361,7 @@ public class LangParser extends Parser {
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class CondNotContext extends CondContext {
-		public TerminalNode NOT() { return getToken(LangParser.NOT, 0); }
+		public TerminalNode NOT() { return getToken(DASParser.NOT, 0); }
 		public CondContext cond() {
 			return getRuleContext(CondContext.class,0);
 		}
@@ -1506,9 +1506,9 @@ public class LangParser extends Parser {
 		public TipoContext tipo() {
 			return getRuleContext(TipoContext.class,0);
 		}
-		public TerminalNode VAR() { return getToken(LangParser.VAR, 0); }
-		public TerminalNode AT() { return getToken(LangParser.AT, 0); }
-		public TerminalNode STR() { return getToken(LangParser.STR, 0); }
+		public TerminalNode VAR() { return getToken(DASParser.VAR, 0); }
+		public TerminalNode AT() { return getToken(DASParser.AT, 0); }
+		public TerminalNode STR() { return getToken(DASParser.STR, 0); }
 		public AtribVarStrContext(AtribContext ctx) { copyFrom(ctx); }
 	}
 	@SuppressWarnings("CheckReturnValue")
@@ -1516,8 +1516,8 @@ public class LangParser extends Parser {
 		public TipoContext tipo() {
 			return getRuleContext(TipoContext.class,0);
 		}
-		public TerminalNode VAR() { return getToken(LangParser.VAR, 0); }
-		public TerminalNode AT() { return getToken(LangParser.AT, 0); }
+		public TerminalNode VAR() { return getToken(DASParser.VAR, 0); }
+		public TerminalNode AT() { return getToken(DASParser.AT, 0); }
 		public ExprContext expr() {
 			return getRuleContext(ExprContext.class,0);
 		}
@@ -1589,7 +1589,7 @@ public class LangParser extends Parser {
 		public TermContext term() {
 			return getRuleContext(TermContext.class,0);
 		}
-		public TerminalNode PLUS() { return getToken(LangParser.PLUS, 0); }
+		public TerminalNode PLUS() { return getToken(DASParser.PLUS, 0); }
 		public ExprContext expr() {
 			return getRuleContext(ExprContext.class,0);
 		}
@@ -1600,7 +1600,7 @@ public class LangParser extends Parser {
 		public TermContext term() {
 			return getRuleContext(TermContext.class,0);
 		}
-		public TerminalNode MINUS() { return getToken(LangParser.MINUS, 0); }
+		public TerminalNode MINUS() { return getToken(DASParser.MINUS, 0); }
 		public ExprContext expr() {
 			return getRuleContext(ExprContext.class,0);
 		}
@@ -1683,7 +1683,7 @@ public class LangParser extends Parser {
 		public FactorContext factor() {
 			return getRuleContext(FactorContext.class,0);
 		}
-		public TerminalNode DIV() { return getToken(LangParser.DIV, 0); }
+		public TerminalNode DIV() { return getToken(DASParser.DIV, 0); }
 		public TermContext term() {
 			return getRuleContext(TermContext.class,0);
 		}
@@ -1694,7 +1694,7 @@ public class LangParser extends Parser {
 		public FactorContext factor() {
 			return getRuleContext(FactorContext.class,0);
 		}
-		public TerminalNode MULT() { return getToken(LangParser.MULT, 0); }
+		public TerminalNode MULT() { return getToken(DASParser.MULT, 0); }
 		public TermContext term() {
 			return getRuleContext(TermContext.class,0);
 		}
@@ -1774,21 +1774,21 @@ public class LangParser extends Parser {
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class FactorNumContext extends FactorContext {
-		public TerminalNode NUM() { return getToken(LangParser.NUM, 0); }
+		public TerminalNode NUM() { return getToken(DASParser.NUM, 0); }
 		public FactorNumContext(FactorContext ctx) { copyFrom(ctx); }
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class FactorVarContext extends FactorContext {
-		public TerminalNode VAR() { return getToken(LangParser.VAR, 0); }
+		public TerminalNode VAR() { return getToken(DASParser.VAR, 0); }
 		public FactorVarContext(FactorContext ctx) { copyFrom(ctx); }
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class FactorExprContext extends FactorContext {
-		public TerminalNode OE() { return getToken(LangParser.OE, 0); }
+		public TerminalNode OE() { return getToken(DASParser.OE, 0); }
 		public ExprContext expr() {
 			return getRuleContext(ExprContext.class,0);
 		}
-		public TerminalNode CE() { return getToken(LangParser.CE, 0); }
+		public TerminalNode CE() { return getToken(DASParser.CE, 0); }
 		public FactorExprContext(FactorContext ctx) { copyFrom(ctx); }
 	}
 

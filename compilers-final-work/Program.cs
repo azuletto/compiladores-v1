@@ -1,6 +1,6 @@
 ﻿using Antlr4.Runtime;
 using Antlr4.Runtime.Tree;
-using Interpreter.Lang;
+using Interpreter.DAS;
 using Grammar;
 
 internal class Program
@@ -9,19 +9,19 @@ internal class Program
     {
         //LEXER
         //### input        
-        var inputStream = new AntlrFileStream("input.lang");
+        var inputStream = new AntlrFileStream("input.DAS");
         //var inputStream = new AntlrFileStream(args[0]);
         //### lexer
-        var lexer = new LangLexer(inputStream);
+        var lexer = new DASLexer(inputStream);
 
         //PARSER
         //### tokens
         var tokenStream = new BufferedTokenStream(lexer);
         //### parser
-        var parser = new LangParser(tokenStream);
+        var parser = new DASParser(tokenStream);
 
         //### error listener
-        var errorListener = new LangErrorListener();
+        var errorListener = new DASErrorListener();
         parser.RemoveErrorListeners();
         parser.AddErrorListener(errorListener);
         //### error handling
@@ -30,7 +30,7 @@ internal class Program
 
 
         //### semantic listener
-        var semanticListener = new SemanticLangListener();
+        var semanticListener = new SemanticDASListener();
         parser.RemoveParseListeners();
         parser.AddParseListener(semanticListener);
 
@@ -66,7 +66,7 @@ internal class Program
         //### execute
         if (tree != null)
         {
-            var interpreter = new LangInterpreter(semanticListener.Functions);
+            var interpreter = new DASInterpreter(semanticListener.Functions);
             interpreter.Visit(tree);
         }
 
