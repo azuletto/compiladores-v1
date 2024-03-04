@@ -1,0 +1,5 @@
+C:\Users\andre\Downloads\BLG-Compiler-main\C#-Aula\compilers-final-work\obj\Debug\net6.0\compilers-final-work.csproj.AssemblyReference.cache
+C:\Users\andre\Downloads\BLG-Compiler-main\C#-Aula\compilers-final-work\obj\Debug\net6.0\compilers-final-work.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre\Downloads\BLG-Compiler-main\C#-Aula\compilers-final-work\obj\Debug\net6.0\compilers-final-work.AssemblyInfoInputs.cache
+C:\Users\andre\Downloads\BLG-Compiler-main\C#-Aula\compilers-final-work\obj\Debug\net6.0\compilers-final-work.AssemblyInfo.cs
+C:\Users\andre\Downloads\BLG-Compiler-main\C#-Aula\compilers-final-work\obj\Debug\net6.0\compilers-final-work.csproj.CoreCompileInputs.cache
