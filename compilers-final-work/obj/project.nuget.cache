@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qnTDdrbF8jWVU3IQQpnQQtnrPJ8LL+24phsI40EB/KzDYT9B4PHEWP409FYdQL+a/I0VBcgVOIz+9+oW8Z7+iA==",
+  "dgSpecHash": "+JTP0Nl7pvyU7Qw/es09/OIoQ6WoNrD+KX/vyzYD0yBlf/czPnbNgI3pxCFVvHFj0CZk+jhF+UJIMmdLaW2p5Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\andre\\Downloads\\BLG-Compiler-main\\C#-Aula\\compilers-final-work\\compilers-final-work.csproj",
+  "projectFilePath": "C:\\Users\\andre\\Documents\\GitHub\\compiladores\\compilers-final-work\\compilers-final-work.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andre\\.nuget\\packages\\antlr4.runtime.standard\\4.9.2\\antlr4.runtime.standard.4.9.2.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",

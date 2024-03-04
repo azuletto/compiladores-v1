@@ -109,8 +109,8 @@ factor:
 // Lexical rules
 OE: '(';
 CE: ')';
-OB: 'START';
-CB: 'END';
+OB: '{';
+CB: '}';
 AT: '=';
 SEP: ',';
 PLUS: '+';

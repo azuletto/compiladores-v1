@@ -1,4 +1,4 @@
-// Generated from /home/geovanerigonato/Área de Trabalho/MariaLuisa/Compiladores-main/compilers-final-work-main/Lang.g4 by ANTLR 4.9.2
+// Generated from Lang.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -8,9 +8,9 @@ import java.util.List;
 import java.util.Iterator;
 import java.util.ArrayList;
 
-@SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
+@SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast", "CheckReturnValue"})
 public class LangParser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.9.2", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.13.1", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
@@ -105,6 +105,7 @@ public class LangParser extends Parser {
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class ProgContext extends ParserRuleContext {
 		public ProgContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -116,6 +117,7 @@ public class LangParser extends Parser {
 			super.copyFrom(ctx);
 		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class ProgLineContext extends ProgContext {
 		public FunctionsContext functions() {
 			return getRuleContext(FunctionsContext.class,0);
@@ -127,6 +129,14 @@ public class LangParser extends Parser {
 			return getRuleContext(LineContext.class,i);
 		}
 		public ProgLineContext(ProgContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterProgLine(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitProgLine(this);
+		}
 	}
 
 	public final ProgContext prog() throws RecognitionException {
@@ -152,7 +162,7 @@ public class LangParser extends Parser {
 				setState(46); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__1) | (1L << IF) | (1L << WHILE) | (1L << DO) | (1L << FOR) | (1L << WRITE) | (1L << EOL) | (1L << VAR))) != 0) );
+			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & 176345317382L) != 0) );
 			}
 		}
 		catch (RecognitionException re) {
@@ -166,6 +176,7 @@ public class LangParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class FunctionsContext extends ParserRuleContext {
 		public FunctionContext function() {
 			return getRuleContext(FunctionContext.class,0);
@@ -177,6 +188,14 @@ public class LangParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_functions; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterFunctions(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitFunctions(this);
+		}
 	}
 
 	public final FunctionsContext functions() throws RecognitionException {
@@ -223,6 +242,7 @@ public class LangParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class FunctionContext extends ParserRuleContext {
 		public TerminalNode FUNCTION() { return getToken(LangParser.FUNCTION, 0); }
 		public TerminalNode VAR() { return getToken(LangParser.VAR, 0); }
@@ -238,6 +258,14 @@ public class LangParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_function; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterFunction(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitFunction(this);
+		}
 	}
 
 	public final FunctionContext function() throws RecognitionException {
@@ -271,6 +299,7 @@ public class LangParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class FnBlockContext extends ParserRuleContext {
 		public FnBlockContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -282,6 +311,7 @@ public class LangParser extends Parser {
 			super.copyFrom(ctx);
 		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class FnBlockLineContext extends FnBlockContext {
 		public TerminalNode OB() { return getToken(LangParser.OB, 0); }
 		public FnBodyContext fnBody() {
@@ -289,6 +319,14 @@ public class LangParser extends Parser {
 		}
 		public TerminalNode CB() { return getToken(LangParser.CB, 0); }
 		public FnBlockLineContext(FnBlockContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterFnBlockLine(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitFnBlockLine(this);
+		}
 	}
 
 	public final FnBlockContext fnBlock() throws RecognitionException {
@@ -317,6 +355,7 @@ public class LangParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class FnBodyContext extends ParserRuleContext {
 		public FnBodyContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -328,17 +367,36 @@ public class LangParser extends Parser {
 			super.copyFrom(ctx);
 		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class FnReturnLineContext extends FnBodyContext {
 		public TerminalNode RETURN() { return getToken(LangParser.RETURN, 0); }
 		public TerminalNode EOL() { return getToken(LangParser.EOL, 0); }
 		public FnReturnLineContext(FnBodyContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterFnReturnLine(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitFnReturnLine(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class FnBodyLineContext extends FnBodyContext {
 		public LineContext line() {
 			return getRuleContext(LineContext.class,0);
 		}
 		public FnBodyLineContext(FnBodyContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterFnBodyLine(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitFnBodyLine(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class FnReturnExprLineContext extends FnBodyContext {
 		public TerminalNode RETURN() { return getToken(LangParser.RETURN, 0); }
 		public ExprContext expr() {
@@ -346,7 +404,16 @@ public class LangParser extends Parser {
 		}
 		public TerminalNode EOL() { return getToken(LangParser.EOL, 0); }
 		public FnReturnExprLineContext(FnBodyContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterFnReturnExprLine(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitFnReturnExprLine(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class FnBodyLineMoreContext extends FnBodyContext {
 		public LineContext line() {
 			return getRuleContext(LineContext.class,0);
@@ -355,6 +422,14 @@ public class LangParser extends Parser {
 			return getRuleContext(FnBodyContext.class,0);
 		}
 		public FnBodyLineMoreContext(FnBodyContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterFnBodyLineMore(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitFnBodyLineMore(this);
+		}
 	}
 
 	public final FnBodyContext fnBody() throws RecognitionException {
@@ -417,6 +492,7 @@ public class LangParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class ParamsContext extends ParserRuleContext {
 		public TerminalNode VAR() { return getToken(LangParser.VAR, 0); }
 		public TerminalNode SEP() { return getToken(LangParser.SEP, 0); }
@@ -427,6 +503,14 @@ public class LangParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_params; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterParams(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitParams(this);
+		}
 	}
 
 	public final ParamsContext params() throws RecognitionException {
@@ -472,6 +556,7 @@ public class LangParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class LineContext extends ParserRuleContext {
 		public LineContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -483,34 +568,79 @@ public class LangParser extends Parser {
 			super.copyFrom(ctx);
 		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class LineWhileContext extends LineContext {
 		public WhilestContext whilest() {
 			return getRuleContext(WhilestContext.class,0);
 		}
 		public LineWhileContext(LineContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterLineWhile(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitLineWhile(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class LineEOLContext extends LineContext {
 		public TerminalNode EOL() { return getToken(LangParser.EOL, 0); }
 		public LineEOLContext(LineContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterLineEOL(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitLineEOL(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class LineStmtContext extends LineContext {
 		public StmtContext stmt() {
 			return getRuleContext(StmtContext.class,0);
 		}
 		public TerminalNode EOL() { return getToken(LangParser.EOL, 0); }
 		public LineStmtContext(LineContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterLineStmt(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitLineStmt(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class LineIfContext extends LineContext {
 		public IfstContext ifst() {
 			return getRuleContext(IfstContext.class,0);
 		}
 		public LineIfContext(LineContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterLineIf(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitLineIf(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class LineForContext extends LineContext {
 		public ForstContext forst() {
 			return getRuleContext(ForstContext.class,0);
 		}
 		public LineForContext(LineContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterLineFor(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitLineFor(this);
+		}
 	}
 
 	public final LineContext line() throws RecognitionException {
@@ -581,6 +711,7 @@ public class LangParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class FuncInvocContext extends ParserRuleContext {
 		public FuncInvocContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -592,6 +723,7 @@ public class LangParser extends Parser {
 			super.copyFrom(ctx);
 		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class FuncInvocLineContext extends FuncInvocContext {
 		public TerminalNode VAR() { return getToken(LangParser.VAR, 0); }
 		public TerminalNode OE() { return getToken(LangParser.OE, 0); }
@@ -600,6 +732,14 @@ public class LangParser extends Parser {
 		}
 		public TerminalNode CE() { return getToken(LangParser.CE, 0); }
 		public FuncInvocLineContext(FuncInvocContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterFuncInvocLine(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitFuncInvocLine(this);
+		}
 	}
 
 	public final FuncInvocContext funcInvoc() throws RecognitionException {
@@ -630,6 +770,7 @@ public class LangParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class StmtContext extends ParserRuleContext {
 		public StmtContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -641,29 +782,65 @@ public class LangParser extends Parser {
 			super.copyFrom(ctx);
 		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class StmtOutputContext extends StmtContext {
 		public OutputContext output() {
 			return getRuleContext(OutputContext.class,0);
 		}
 		public StmtOutputContext(StmtContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterStmtOutput(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitStmtOutput(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class StmtInputContext extends StmtContext {
 		public InputContext input() {
 			return getRuleContext(InputContext.class,0);
 		}
 		public StmtInputContext(StmtContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterStmtInput(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitStmtInput(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class StmtAtribContext extends StmtContext {
 		public AtribContext atrib() {
 			return getRuleContext(AtribContext.class,0);
 		}
 		public StmtAtribContext(StmtContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterStmtAtrib(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitStmtAtrib(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class LineFuncInvocContext extends StmtContext {
 		public FuncInvocContext funcInvoc() {
 			return getRuleContext(FuncInvocContext.class,0);
 		}
 		public LineFuncInvocContext(StmtContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterLineFuncInvoc(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitLineFuncInvoc(this);
+		}
 	}
 
 	public final StmtContext stmt() throws RecognitionException {
@@ -718,6 +895,7 @@ public class LangParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class InputContext extends ParserRuleContext {
 		public InputContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -729,6 +907,7 @@ public class LangParser extends Parser {
 			super.copyFrom(ctx);
 		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class InputReadContext extends InputContext {
 		public TipoContext tipo() {
 			return getRuleContext(TipoContext.class,0);
@@ -736,6 +915,14 @@ public class LangParser extends Parser {
 		public TerminalNode READ() { return getToken(LangParser.READ, 0); }
 		public TerminalNode VAR() { return getToken(LangParser.VAR, 0); }
 		public InputReadContext(InputContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterInputRead(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitInputRead(this);
+		}
 	}
 
 	public final InputContext input() throws RecognitionException {
@@ -764,6 +951,7 @@ public class LangParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class OutputContext extends ParserRuleContext {
 		public OutputContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -775,22 +963,49 @@ public class LangParser extends Parser {
 			super.copyFrom(ctx);
 		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class OutputWriteStrContext extends OutputContext {
 		public TerminalNode WRITE() { return getToken(LangParser.WRITE, 0); }
 		public TerminalNode STR() { return getToken(LangParser.STR, 0); }
 		public OutputWriteStrContext(OutputContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterOutputWriteStr(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitOutputWriteStr(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class OutputWriteVarContext extends OutputContext {
 		public TerminalNode WRITE() { return getToken(LangParser.WRITE, 0); }
 		public TerminalNode VAR() { return getToken(LangParser.VAR, 0); }
 		public OutputWriteVarContext(OutputContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterOutputWriteVar(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitOutputWriteVar(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class OutputWriteExprContext extends OutputContext {
 		public TerminalNode WRITE() { return getToken(LangParser.WRITE, 0); }
 		public ExprContext expr() {
 			return getRuleContext(ExprContext.class,0);
 		}
 		public OutputWriteExprContext(OutputContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterOutputWriteExpr(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitOutputWriteExpr(this);
+		}
 	}
 
 	public final OutputContext output() throws RecognitionException {
@@ -843,6 +1058,7 @@ public class LangParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class TipoContext extends ParserRuleContext {
 		public TipoContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -854,11 +1070,29 @@ public class LangParser extends Parser {
 			super.copyFrom(ctx);
 		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class TipoNumeroContext extends TipoContext {
 		public TipoNumeroContext(TipoContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterTipoNumero(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitTipoNumero(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class TipoTextoContext extends TipoContext {
 		public TipoTextoContext(TipoContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterTipoTexto(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitTipoTexto(this);
+		}
 	}
 
 	public final TipoContext tipo() throws RecognitionException {
@@ -899,6 +1133,7 @@ public class LangParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class IfstContext extends ParserRuleContext {
 		public IfstContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -910,6 +1145,7 @@ public class LangParser extends Parser {
 			super.copyFrom(ctx);
 		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class IfstIfElseContext extends IfstContext {
 		public BlockContext b1;
 		public BlockContext b2;
@@ -928,7 +1164,16 @@ public class LangParser extends Parser {
 			return getRuleContext(BlockContext.class,i);
 		}
 		public IfstIfElseContext(IfstContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterIfstIfElse(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitIfstIfElse(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class IfstIfContext extends IfstContext {
 		public TerminalNode IF() { return getToken(LangParser.IF, 0); }
 		public TerminalNode OE() { return getToken(LangParser.OE, 0); }
@@ -941,6 +1186,14 @@ public class LangParser extends Parser {
 			return getRuleContext(BlockContext.class,0);
 		}
 		public IfstIfContext(IfstContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterIfstIf(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitIfstIf(this);
+		}
 	}
 
 	public final IfstContext ifst() throws RecognitionException {
@@ -1003,6 +1256,7 @@ public class LangParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class WhilestContext extends ParserRuleContext {
 		public WhilestContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1014,6 +1268,7 @@ public class LangParser extends Parser {
 			super.copyFrom(ctx);
 		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class WhilestDoWhileContext extends WhilestContext {
 		public TerminalNode DO() { return getToken(LangParser.DO, 0); }
 		public BlockContext block() {
@@ -1026,7 +1281,16 @@ public class LangParser extends Parser {
 		}
 		public TerminalNode CE() { return getToken(LangParser.CE, 0); }
 		public WhilestDoWhileContext(WhilestContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterWhilestDoWhile(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitWhilestDoWhile(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class WhilestWhileContext extends WhilestContext {
 		public TerminalNode WHILE() { return getToken(LangParser.WHILE, 0); }
 		public TerminalNode OE() { return getToken(LangParser.OE, 0); }
@@ -1038,6 +1302,14 @@ public class LangParser extends Parser {
 			return getRuleContext(BlockContext.class,0);
 		}
 		public WhilestWhileContext(WhilestContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterWhilestWhile(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitWhilestWhile(this);
+		}
 	}
 
 	public final WhilestContext whilest() throws RecognitionException {
@@ -1096,6 +1368,7 @@ public class LangParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class ForstContext extends ParserRuleContext {
 		public ForstContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1107,6 +1380,7 @@ public class LangParser extends Parser {
 			super.copyFrom(ctx);
 		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class ForstForContext extends ForstContext {
 		public TerminalNode FOR() { return getToken(LangParser.FOR, 0); }
 		public TerminalNode OE() { return getToken(LangParser.OE, 0); }
@@ -1128,6 +1402,14 @@ public class LangParser extends Parser {
 			return getRuleContext(CondContext.class,0);
 		}
 		public ForstForContext(ForstContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterForstFor(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitForstFor(this);
+		}
 	}
 
 	public final ForstContext forst() throws RecognitionException {
@@ -1157,7 +1439,7 @@ public class LangParser extends Parser {
 			setState(160);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << OE) | (1L << NOT) | (1L << NUM) | (1L << VAR))) != 0)) {
+			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & 206158462984L) != 0)) {
 				{
 				setState(159);
 				cond(0);
@@ -1193,6 +1475,7 @@ public class LangParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class BlockContext extends ParserRuleContext {
 		public BlockContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1204,6 +1487,7 @@ public class LangParser extends Parser {
 			super.copyFrom(ctx);
 		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class BlockLineContext extends BlockContext {
 		public TerminalNode OB() { return getToken(LangParser.OB, 0); }
 		public TerminalNode CB() { return getToken(LangParser.CB, 0); }
@@ -1214,6 +1498,14 @@ public class LangParser extends Parser {
 			return getRuleContext(LineContext.class,i);
 		}
 		public BlockLineContext(BlockContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterBlockLine(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitBlockLine(this);
+		}
 	}
 
 	public final BlockContext block() throws RecognitionException {
@@ -1239,7 +1531,7 @@ public class LangParser extends Parser {
 				setState(173); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__1) | (1L << IF) | (1L << WHILE) | (1L << DO) | (1L << FOR) | (1L << WRITE) | (1L << EOL) | (1L << VAR))) != 0) );
+			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & 176345317382L) != 0) );
 			setState(175);
 			match(CB);
 			}
@@ -1255,6 +1547,7 @@ public class LangParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class CondContext extends ParserRuleContext {
 		public CondContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1266,6 +1559,7 @@ public class LangParser extends Parser {
 			super.copyFrom(ctx);
 		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class CondRelopContext extends CondContext {
 		public ExprContext e1;
 		public Token RELOP;
@@ -1283,13 +1577,31 @@ public class LangParser extends Parser {
 		public TerminalNode LE() { return getToken(LangParser.LE, 0); }
 		public TerminalNode GE() { return getToken(LangParser.GE, 0); }
 		public CondRelopContext(CondContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterCondRelop(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitCondRelop(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class CondExprContext extends CondContext {
 		public ExprContext expr() {
 			return getRuleContext(ExprContext.class,0);
 		}
 		public CondExprContext(CondContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterCondExpr(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitCondExpr(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class CondAndContext extends CondContext {
 		public CondContext c1;
 		public CondContext c2;
@@ -1301,7 +1613,16 @@ public class LangParser extends Parser {
 			return getRuleContext(CondContext.class,i);
 		}
 		public CondAndContext(CondContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterCondAnd(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitCondAnd(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class CondOrContext extends CondContext {
 		public CondContext c1;
 		public CondContext c2;
@@ -1313,13 +1634,30 @@ public class LangParser extends Parser {
 			return getRuleContext(CondContext.class,i);
 		}
 		public CondOrContext(CondContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterCondOr(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitCondOr(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class CondNotContext extends CondContext {
 		public TerminalNode NOT() { return getToken(LangParser.NOT, 0); }
 		public CondContext cond() {
 			return getRuleContext(CondContext.class,0);
 		}
 		public CondNotContext(CondContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterCondNot(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitCondNot(this);
+		}
 	}
 
 	public final CondContext cond() throws RecognitionException {
@@ -1361,7 +1699,7 @@ public class LangParser extends Parser {
 				setState(180);
 				((CondRelopContext)_localctx).RELOP = _input.LT(1);
 				_la = _input.LA(1);
-				if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << EQ) | (1L << LT) | (1L << GT) | (1L << LE) | (1L << GE) | (1L << NE))) != 0)) ) {
+				if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 4128768L) != 0)) ) {
 					((CondRelopContext)_localctx).RELOP = (Token)_errHandler.recoverInline(this);
 				}
 				else {
@@ -1443,6 +1781,7 @@ public class LangParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class AtribContext extends ParserRuleContext {
 		public AtribContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1454,6 +1793,7 @@ public class LangParser extends Parser {
 			super.copyFrom(ctx);
 		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class AtribVarStrContext extends AtribContext {
 		public TipoContext tipo() {
 			return getRuleContext(TipoContext.class,0);
@@ -1462,7 +1802,16 @@ public class LangParser extends Parser {
 		public TerminalNode AT() { return getToken(LangParser.AT, 0); }
 		public TerminalNode STR() { return getToken(LangParser.STR, 0); }
 		public AtribVarStrContext(AtribContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterAtribVarStr(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitAtribVarStr(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class AtribVarContext extends AtribContext {
 		public TipoContext tipo() {
 			return getRuleContext(TipoContext.class,0);
@@ -1473,6 +1822,14 @@ public class LangParser extends Parser {
 			return getRuleContext(ExprContext.class,0);
 		}
 		public AtribVarContext(AtribContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterAtribVar(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitAtribVar(this);
+		}
 	}
 
 	public final AtribContext atrib() throws RecognitionException {
@@ -1523,6 +1880,7 @@ public class LangParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class ExprContext extends ParserRuleContext {
 		public ExprContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1534,6 +1892,7 @@ public class LangParser extends Parser {
 			super.copyFrom(ctx);
 		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class ExprPlusContext extends ExprContext {
 		public TermContext term() {
 			return getRuleContext(TermContext.class,0);
@@ -1543,7 +1902,16 @@ public class LangParser extends Parser {
 			return getRuleContext(ExprContext.class,0);
 		}
 		public ExprPlusContext(ExprContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterExprPlus(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitExprPlus(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class ExprMinusContext extends ExprContext {
 		public TermContext term() {
 			return getRuleContext(TermContext.class,0);
@@ -1553,12 +1921,29 @@ public class LangParser extends Parser {
 			return getRuleContext(ExprContext.class,0);
 		}
 		public ExprMinusContext(ExprContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterExprMinus(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitExprMinus(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class ExprTermContext extends ExprContext {
 		public TermContext term() {
 			return getRuleContext(TermContext.class,0);
 		}
 		public ExprTermContext(ExprContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterExprTerm(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitExprTerm(this);
+		}
 	}
 
 	public final ExprContext expr() throws RecognitionException {
@@ -1613,6 +1998,7 @@ public class LangParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class TermContext extends ParserRuleContext {
 		public TermContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1624,6 +2010,7 @@ public class LangParser extends Parser {
 			super.copyFrom(ctx);
 		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class TermDivContext extends TermContext {
 		public FactorContext factor() {
 			return getRuleContext(FactorContext.class,0);
@@ -1633,7 +2020,16 @@ public class LangParser extends Parser {
 			return getRuleContext(TermContext.class,0);
 		}
 		public TermDivContext(TermContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterTermDiv(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitTermDiv(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class TermMultContext extends TermContext {
 		public FactorContext factor() {
 			return getRuleContext(FactorContext.class,0);
@@ -1643,12 +2039,29 @@ public class LangParser extends Parser {
 			return getRuleContext(TermContext.class,0);
 		}
 		public TermMultContext(TermContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterTermMult(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitTermMult(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class TermFactorContext extends TermContext {
 		public FactorContext factor() {
 			return getRuleContext(FactorContext.class,0);
 		}
 		public TermFactorContext(TermContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterTermFactor(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitTermFactor(this);
+		}
 	}
 
 	public final TermContext term() throws RecognitionException {
@@ -1703,6 +2116,7 @@ public class LangParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class FactorContext extends ParserRuleContext {
 		public FactorContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1714,14 +2128,33 @@ public class LangParser extends Parser {
 			super.copyFrom(ctx);
 		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class FactorNumContext extends FactorContext {
 		public TerminalNode NUM() { return getToken(LangParser.NUM, 0); }
 		public FactorNumContext(FactorContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterFactorNum(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitFactorNum(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class FactorVarContext extends FactorContext {
 		public TerminalNode VAR() { return getToken(LangParser.VAR, 0); }
 		public FactorVarContext(FactorContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterFactorVar(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitFactorVar(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class FactorExprContext extends FactorContext {
 		public TerminalNode OE() { return getToken(LangParser.OE, 0); }
 		public ExprContext expr() {
@@ -1729,6 +2162,14 @@ public class LangParser extends Parser {
 		}
 		public TerminalNode CE() { return getToken(LangParser.CE, 0); }
 		public FactorExprContext(FactorContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).enterFactorExpr(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof LangListener ) ((LangListener)listener).exitFactorExpr(this);
+		}
 	}
 
 	public final FactorContext factor() throws RecognitionException {
@@ -1799,83 +2240,154 @@ public class LangParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3)\u00f3\4\2\t\2\4"+
-		"\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t"+
-		"\13\4\f\t\f\4\r\t\r\4\16\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22"+
-		"\4\23\t\23\4\24\t\24\4\25\t\25\4\26\t\26\3\2\3\2\6\2/\n\2\r\2\16\2\60"+
-		"\3\3\3\3\3\3\3\3\5\3\67\n\3\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\5\3\5\3\5\3"+
-		"\5\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\5\6N\n\6\3\7\3\7\3\7\3\7\3"+
-		"\7\5\7U\n\7\3\b\3\b\3\b\3\b\3\b\3\b\3\b\5\b^\n\b\3\t\3\t\3\t\3\t\3\t\3"+
-		"\n\3\n\3\n\3\n\5\ni\n\n\3\13\3\13\3\13\3\13\3\f\3\f\3\f\3\f\3\f\3\f\5"+
-		"\fu\n\f\3\r\3\r\5\ry\n\r\3\16\3\16\3\16\3\16\3\16\3\16\3\16\3\16\3\16"+
-		"\3\16\3\16\3\16\3\16\3\16\3\16\3\16\5\16\u008b\n\16\3\17\3\17\3\17\3\17"+
-		"\3\17\3\17\3\17\3\17\3\17\3\17\3\17\3\17\3\17\5\17\u009a\n\17\3\20\3\20"+
-		"\3\20\5\20\u009f\n\20\3\20\3\20\5\20\u00a3\n\20\3\20\3\20\5\20\u00a7\n"+
-		"\20\3\20\3\20\3\20\3\21\3\21\6\21\u00ae\n\21\r\21\16\21\u00af\3\21\3\21"+
-		"\3\22\3\22\3\22\3\22\3\22\3\22\3\22\3\22\5\22\u00bc\n\22\3\22\3\22\3\22"+
-		"\3\22\3\22\3\22\7\22\u00c4\n\22\f\22\16\22\u00c7\13\22\3\23\3\23\3\23"+
-		"\3\23\3\23\3\23\3\23\3\23\3\23\3\23\5\23\u00d3\n\23\3\24\3\24\3\24\3\24"+
-		"\3\24\3\24\3\24\3\24\3\24\5\24\u00de\n\24\3\25\3\25\3\25\3\25\3\25\3\25"+
-		"\3\25\3\25\3\25\5\25\u00e9\n\25\3\26\3\26\3\26\3\26\3\26\3\26\5\26\u00f1"+
-		"\n\26\3\26\2\3\"\27\2\4\6\b\n\f\16\20\22\24\26\30\32\34\36 \"$&(*\2\3"+
-		"\3\2\22\27\2\u00ff\2,\3\2\2\2\4\66\3\2\2\2\68\3\2\2\2\b?\3\2\2\2\nM\3"+
-		"\2\2\2\fT\3\2\2\2\16]\3\2\2\2\20_\3\2\2\2\22h\3\2\2\2\24j\3\2\2\2\26t"+
-		"\3\2\2\2\30x\3\2\2\2\32\u008a\3\2\2\2\34\u0099\3\2\2\2\36\u009b\3\2\2"+
-		"\2 \u00ab\3\2\2\2\"\u00bb\3\2\2\2$\u00d2\3\2\2\2&\u00dd\3\2\2\2(\u00e8"+
-		"\3\2\2\2*\u00f0\3\2\2\2,.\5\4\3\2-/\5\16\b\2.-\3\2\2\2/\60\3\2\2\2\60"+
-		".\3\2\2\2\60\61\3\2\2\2\61\3\3\2\2\2\62\63\5\6\4\2\63\64\5\4\3\2\64\67"+
-		"\3\2\2\2\65\67\3\2\2\2\66\62\3\2\2\2\66\65\3\2\2\2\67\5\3\2\2\289\7\36"+
-		"\2\29:\7\'\2\2:;\7\5\2\2;<\5\f\7\2<=\7\6\2\2=>\5\b\5\2>\7\3\2\2\2?@\7"+
-		"\7\2\2@A\5\n\6\2AB\7\b\2\2B\t\3\2\2\2CN\5\16\b\2DE\5\16\b\2EF\5\n\6\2"+
-		"FN\3\2\2\2GH\7\37\2\2HI\5&\24\2IJ\7%\2\2JN\3\2\2\2KL\7\37\2\2LN\7%\2\2"+
-		"MC\3\2\2\2MD\3\2\2\2MG\3\2\2\2MK\3\2\2\2N\13\3\2\2\2OU\7\'\2\2PQ\7\'\2"+
-		"\2QR\7\n\2\2RU\5\f\7\2SU\3\2\2\2TO\3\2\2\2TP\3\2\2\2TS\3\2\2\2U\r\3\2"+
-		"\2\2VW\5\22\n\2WX\7%\2\2X^\3\2\2\2Y^\5\32\16\2Z^\5\34\17\2[^\5\36\20\2"+
-		"\\^\7%\2\2]V\3\2\2\2]Y\3\2\2\2]Z\3\2\2\2][\3\2\2\2]\\\3\2\2\2^\17\3\2"+
-		"\2\2_`\7\'\2\2`a\7\5\2\2ab\5\f\7\2bc\7\6\2\2c\21\3\2\2\2di\5$\23\2ei\5"+
-		"\24\13\2fi\5\26\f\2gi\5\20\t\2hd\3\2\2\2he\3\2\2\2hf\3\2\2\2hg\3\2\2\2"+
-		"i\23\3\2\2\2jk\5\30\r\2kl\7#\2\2lm\7\'\2\2m\25\3\2\2\2no\7\"\2\2ou\7\'"+
-		"\2\2pq\7\"\2\2qu\7$\2\2rs\7\"\2\2su\5&\24\2tn\3\2\2\2tp\3\2\2\2tr\3\2"+
-		"\2\2u\27\3\2\2\2vy\7\3\2\2wy\7\4\2\2xv\3\2\2\2xw\3\2\2\2y\31\3\2\2\2z"+
-		"{\7\32\2\2{|\7\5\2\2|}\5\"\22\2}~\7\6\2\2~\177\7 \2\2\177\u0080\5 \21"+
-		"\2\u0080\u008b\3\2\2\2\u0081\u0082\7\32\2\2\u0082\u0083\7\5\2\2\u0083"+
-		"\u0084\5\"\22\2\u0084\u0085\7\6\2\2\u0085\u0086\7 \2\2\u0086\u0087\5 "+
-		"\21\2\u0087\u0088\7!\2\2\u0088\u0089\5 \21\2\u0089\u008b\3\2\2\2\u008a"+
-		"z\3\2\2\2\u008a\u0081\3\2\2\2\u008b\33\3\2\2\2\u008c\u008d\7\33\2\2\u008d"+
-		"\u008e\7\5\2\2\u008e\u008f\5\"\22\2\u008f\u0090\7\6\2\2\u0090\u0091\5"+
-		" \21\2\u0091\u009a\3\2\2\2\u0092\u0093\7\34\2\2\u0093\u0094\5 \21\2\u0094"+
-		"\u0095\7\33\2\2\u0095\u0096\7\5\2\2\u0096\u0097\5\"\22\2\u0097\u0098\7"+
-		"\6\2\2\u0098\u009a\3\2\2\2\u0099\u008c\3\2\2\2\u0099\u0092\3\2\2\2\u009a"+
-		"\35\3\2\2\2\u009b\u009c\7\35\2\2\u009c\u009e\7\5\2\2\u009d\u009f\5$\23"+
-		"\2\u009e\u009d\3\2\2\2\u009e\u009f\3\2\2\2\u009f\u00a0\3\2\2\2\u00a0\u00a2"+
-		"\7%\2\2\u00a1\u00a3\5\"\22\2\u00a2\u00a1\3\2\2\2\u00a2\u00a3\3\2\2\2\u00a3"+
-		"\u00a4\3\2\2\2\u00a4\u00a6\7%\2\2\u00a5\u00a7\5$\23\2\u00a6\u00a5\3\2"+
-		"\2\2\u00a6\u00a7\3\2\2\2\u00a7\u00a8\3\2\2\2\u00a8\u00a9\7\6\2\2\u00a9"+
-		"\u00aa\5 \21\2\u00aa\37\3\2\2\2\u00ab\u00ad\7\7\2\2\u00ac\u00ae\5\16\b"+
-		"\2\u00ad\u00ac\3\2\2\2\u00ae\u00af\3\2\2\2\u00af\u00ad\3\2\2\2\u00af\u00b0"+
-		"\3\2\2\2\u00b0\u00b1\3\2\2\2\u00b1\u00b2\7\b\2\2\u00b2!\3\2\2\2\u00b3"+
-		"\u00b4\b\22\1\2\u00b4\u00bc\5&\24\2\u00b5\u00b6\5&\24\2\u00b6\u00b7\t"+
-		"\2\2\2\u00b7\u00b8\5&\24\2\u00b8\u00bc\3\2\2\2\u00b9\u00ba\7\21\2\2\u00ba"+
-		"\u00bc\5\"\22\3\u00bb\u00b3\3\2\2\2\u00bb\u00b5\3\2\2\2\u00bb\u00b9\3"+
-		"\2\2\2\u00bc\u00c5\3\2\2\2\u00bd\u00be\f\5\2\2\u00be\u00bf\7\17\2\2\u00bf"+
-		"\u00c4\5\"\22\6\u00c0\u00c1\f\4\2\2\u00c1\u00c2\7\20\2\2\u00c2\u00c4\5"+
-		"\"\22\5\u00c3\u00bd\3\2\2\2\u00c3\u00c0\3\2\2\2\u00c4\u00c7\3\2\2\2\u00c5"+
-		"\u00c3\3\2\2\2\u00c5\u00c6\3\2\2\2\u00c6#\3\2\2\2\u00c7\u00c5\3\2\2\2"+
-		"\u00c8\u00c9\5\30\r\2\u00c9\u00ca\7\'\2\2\u00ca\u00cb\7\t\2\2\u00cb\u00cc"+
-		"\5&\24\2\u00cc\u00d3\3\2\2\2\u00cd\u00ce\5\30\r\2\u00ce\u00cf\7\'\2\2"+
-		"\u00cf\u00d0\7\t\2\2\u00d0\u00d1\7$\2\2\u00d1\u00d3\3\2\2\2\u00d2\u00c8"+
-		"\3\2\2\2\u00d2\u00cd\3\2\2\2\u00d3%\3\2\2\2\u00d4\u00d5\5(\25\2\u00d5"+
-		"\u00d6\7\13\2\2\u00d6\u00d7\5&\24\2\u00d7\u00de\3\2\2\2\u00d8\u00d9\5"+
-		"(\25\2\u00d9\u00da\7\f\2\2\u00da\u00db\5&\24\2\u00db\u00de\3\2\2\2\u00dc"+
-		"\u00de\5(\25\2\u00dd\u00d4\3\2\2\2\u00dd\u00d8\3\2\2\2\u00dd\u00dc\3\2"+
-		"\2\2\u00de\'\3\2\2\2\u00df\u00e0\5*\26\2\u00e0\u00e1\7\r\2\2\u00e1\u00e2"+
-		"\5(\25\2\u00e2\u00e9\3\2\2\2\u00e3\u00e4\5*\26\2\u00e4\u00e5\7\16\2\2"+
-		"\u00e5\u00e6\5(\25\2\u00e6\u00e9\3\2\2\2\u00e7\u00e9\5*\26\2\u00e8\u00df"+
-		"\3\2\2\2\u00e8\u00e3\3\2\2\2\u00e8\u00e7\3\2\2\2\u00e9)\3\2\2\2\u00ea"+
-		"\u00eb\7\5\2\2\u00eb\u00ec\5&\24\2\u00ec\u00ed\7\6\2\2\u00ed\u00f1\3\2"+
-		"\2\2\u00ee\u00f1\7\'\2\2\u00ef\u00f1\7&\2\2\u00f0\u00ea\3\2\2\2\u00f0"+
-		"\u00ee\3\2\2\2\u00f0\u00ef\3\2\2\2\u00f1+\3\2\2\2\27\60\66MT]htx\u008a"+
-		"\u0099\u009e\u00a2\u00a6\u00af\u00bb\u00c3\u00c5\u00d2\u00dd\u00e8\u00f0";
+		"\u0004\u0001\'\u00f1\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001\u0002"+
+		"\u0002\u0007\u0002\u0002\u0003\u0007\u0003\u0002\u0004\u0007\u0004\u0002"+
+		"\u0005\u0007\u0005\u0002\u0006\u0007\u0006\u0002\u0007\u0007\u0007\u0002"+
+		"\b\u0007\b\u0002\t\u0007\t\u0002\n\u0007\n\u0002\u000b\u0007\u000b\u0002"+
+		"\f\u0007\f\u0002\r\u0007\r\u0002\u000e\u0007\u000e\u0002\u000f\u0007\u000f"+
+		"\u0002\u0010\u0007\u0010\u0002\u0011\u0007\u0011\u0002\u0012\u0007\u0012"+
+		"\u0002\u0013\u0007\u0013\u0002\u0014\u0007\u0014\u0001\u0000\u0001\u0000"+
+		"\u0004\u0000-\b\u0000\u000b\u0000\f\u0000.\u0001\u0001\u0001\u0001\u0001"+
+		"\u0001\u0001\u0001\u0003\u00015\b\u0001\u0001\u0002\u0001\u0002\u0001"+
+		"\u0002\u0001\u0002\u0001\u0002\u0001\u0002\u0001\u0002\u0001\u0003\u0001"+
+		"\u0003\u0001\u0003\u0001\u0003\u0001\u0004\u0001\u0004\u0001\u0004\u0001"+
+		"\u0004\u0001\u0004\u0001\u0004\u0001\u0004\u0001\u0004\u0001\u0004\u0001"+
+		"\u0004\u0003\u0004L\b\u0004\u0001\u0005\u0001\u0005\u0001\u0005\u0001"+
+		"\u0005\u0001\u0005\u0003\u0005S\b\u0005\u0001\u0006\u0001\u0006\u0001"+
+		"\u0006\u0001\u0006\u0001\u0006\u0001\u0006\u0001\u0006\u0003\u0006\\\b"+
+		"\u0006\u0001\u0007\u0001\u0007\u0001\u0007\u0001\u0007\u0001\u0007\u0001"+
+		"\b\u0001\b\u0001\b\u0001\b\u0003\bg\b\b\u0001\t\u0001\t\u0001\t\u0001"+
+		"\t\u0001\n\u0001\n\u0001\n\u0001\n\u0001\n\u0001\n\u0003\ns\b\n\u0001"+
+		"\u000b\u0001\u000b\u0003\u000bw\b\u000b\u0001\f\u0001\f\u0001\f\u0001"+
+		"\f\u0001\f\u0001\f\u0001\f\u0001\f\u0001\f\u0001\f\u0001\f\u0001\f\u0001"+
+		"\f\u0001\f\u0001\f\u0001\f\u0003\f\u0089\b\f\u0001\r\u0001\r\u0001\r\u0001"+
+		"\r\u0001\r\u0001\r\u0001\r\u0001\r\u0001\r\u0001\r\u0001\r\u0001\r\u0001"+
+		"\r\u0003\r\u0098\b\r\u0001\u000e\u0001\u000e\u0001\u000e\u0003\u000e\u009d"+
+		"\b\u000e\u0001\u000e\u0001\u000e\u0003\u000e\u00a1\b\u000e\u0001\u000e"+
+		"\u0001\u000e\u0003\u000e\u00a5\b\u000e\u0001\u000e\u0001\u000e\u0001\u000e"+
+		"\u0001\u000f\u0001\u000f\u0004\u000f\u00ac\b\u000f\u000b\u000f\f\u000f"+
+		"\u00ad\u0001\u000f\u0001\u000f\u0001\u0010\u0001\u0010\u0001\u0010\u0001"+
+		"\u0010\u0001\u0010\u0001\u0010\u0001\u0010\u0001\u0010\u0003\u0010\u00ba"+
+		"\b\u0010\u0001\u0010\u0001\u0010\u0001\u0010\u0001\u0010\u0001\u0010\u0001"+
+		"\u0010\u0005\u0010\u00c2\b\u0010\n\u0010\f\u0010\u00c5\t\u0010\u0001\u0011"+
+		"\u0001\u0011\u0001\u0011\u0001\u0011\u0001\u0011\u0001\u0011\u0001\u0011"+
+		"\u0001\u0011\u0001\u0011\u0001\u0011\u0003\u0011\u00d1\b\u0011\u0001\u0012"+
+		"\u0001\u0012\u0001\u0012\u0001\u0012\u0001\u0012\u0001\u0012\u0001\u0012"+
+		"\u0001\u0012\u0001\u0012\u0003\u0012\u00dc\b\u0012\u0001\u0013\u0001\u0013"+
+		"\u0001\u0013\u0001\u0013\u0001\u0013\u0001\u0013\u0001\u0013\u0001\u0013"+
+		"\u0001\u0013\u0003\u0013\u00e7\b\u0013\u0001\u0014\u0001\u0014\u0001\u0014"+
+		"\u0001\u0014\u0001\u0014\u0001\u0014\u0003\u0014\u00ef\b\u0014\u0001\u0014"+
+		"\u0000\u0001 \u0015\u0000\u0002\u0004\u0006\b\n\f\u000e\u0010\u0012\u0014"+
+		"\u0016\u0018\u001a\u001c\u001e \"$&(\u0000\u0001\u0001\u0000\u0010\u0015"+
+		"\u00fd\u0000*\u0001\u0000\u0000\u0000\u00024\u0001\u0000\u0000\u0000\u0004"+
+		"6\u0001\u0000\u0000\u0000\u0006=\u0001\u0000\u0000\u0000\bK\u0001\u0000"+
+		"\u0000\u0000\nR\u0001\u0000\u0000\u0000\f[\u0001\u0000\u0000\u0000\u000e"+
+		"]\u0001\u0000\u0000\u0000\u0010f\u0001\u0000\u0000\u0000\u0012h\u0001"+
+		"\u0000\u0000\u0000\u0014r\u0001\u0000\u0000\u0000\u0016v\u0001\u0000\u0000"+
+		"\u0000\u0018\u0088\u0001\u0000\u0000\u0000\u001a\u0097\u0001\u0000\u0000"+
+		"\u0000\u001c\u0099\u0001\u0000\u0000\u0000\u001e\u00a9\u0001\u0000\u0000"+
+		"\u0000 \u00b9\u0001\u0000\u0000\u0000\"\u00d0\u0001\u0000\u0000\u0000"+
+		"$\u00db\u0001\u0000\u0000\u0000&\u00e6\u0001\u0000\u0000\u0000(\u00ee"+
+		"\u0001\u0000\u0000\u0000*,\u0003\u0002\u0001\u0000+-\u0003\f\u0006\u0000"+
+		",+\u0001\u0000\u0000\u0000-.\u0001\u0000\u0000\u0000.,\u0001\u0000\u0000"+
+		"\u0000./\u0001\u0000\u0000\u0000/\u0001\u0001\u0000\u0000\u000001\u0003"+
+		"\u0004\u0002\u000012\u0003\u0002\u0001\u000025\u0001\u0000\u0000\u0000"+
+		"35\u0001\u0000\u0000\u000040\u0001\u0000\u0000\u000043\u0001\u0000\u0000"+
+		"\u00005\u0003\u0001\u0000\u0000\u000067\u0005\u001c\u0000\u000078\u0005"+
+		"%\u0000\u000089\u0005\u0003\u0000\u00009:\u0003\n\u0005\u0000:;\u0005"+
+		"\u0004\u0000\u0000;<\u0003\u0006\u0003\u0000<\u0005\u0001\u0000\u0000"+
+		"\u0000=>\u0005\u0005\u0000\u0000>?\u0003\b\u0004\u0000?@\u0005\u0006\u0000"+
+		"\u0000@\u0007\u0001\u0000\u0000\u0000AL\u0003\f\u0006\u0000BC\u0003\f"+
+		"\u0006\u0000CD\u0003\b\u0004\u0000DL\u0001\u0000\u0000\u0000EF\u0005\u001d"+
+		"\u0000\u0000FG\u0003$\u0012\u0000GH\u0005#\u0000\u0000HL\u0001\u0000\u0000"+
+		"\u0000IJ\u0005\u001d\u0000\u0000JL\u0005#\u0000\u0000KA\u0001\u0000\u0000"+
+		"\u0000KB\u0001\u0000\u0000\u0000KE\u0001\u0000\u0000\u0000KI\u0001\u0000"+
+		"\u0000\u0000L\t\u0001\u0000\u0000\u0000MS\u0005%\u0000\u0000NO\u0005%"+
+		"\u0000\u0000OP\u0005\b\u0000\u0000PS\u0003\n\u0005\u0000QS\u0001\u0000"+
+		"\u0000\u0000RM\u0001\u0000\u0000\u0000RN\u0001\u0000\u0000\u0000RQ\u0001"+
+		"\u0000\u0000\u0000S\u000b\u0001\u0000\u0000\u0000TU\u0003\u0010\b\u0000"+
+		"UV\u0005#\u0000\u0000V\\\u0001\u0000\u0000\u0000W\\\u0003\u0018\f\u0000"+
+		"X\\\u0003\u001a\r\u0000Y\\\u0003\u001c\u000e\u0000Z\\\u0005#\u0000\u0000"+
+		"[T\u0001\u0000\u0000\u0000[W\u0001\u0000\u0000\u0000[X\u0001\u0000\u0000"+
+		"\u0000[Y\u0001\u0000\u0000\u0000[Z\u0001\u0000\u0000\u0000\\\r\u0001\u0000"+
+		"\u0000\u0000]^\u0005%\u0000\u0000^_\u0005\u0003\u0000\u0000_`\u0003\n"+
+		"\u0005\u0000`a\u0005\u0004\u0000\u0000a\u000f\u0001\u0000\u0000\u0000"+
+		"bg\u0003\"\u0011\u0000cg\u0003\u0012\t\u0000dg\u0003\u0014\n\u0000eg\u0003"+
+		"\u000e\u0007\u0000fb\u0001\u0000\u0000\u0000fc\u0001\u0000\u0000\u0000"+
+		"fd\u0001\u0000\u0000\u0000fe\u0001\u0000\u0000\u0000g\u0011\u0001\u0000"+
+		"\u0000\u0000hi\u0003\u0016\u000b\u0000ij\u0005!\u0000\u0000jk\u0005%\u0000"+
+		"\u0000k\u0013\u0001\u0000\u0000\u0000lm\u0005 \u0000\u0000ms\u0005%\u0000"+
+		"\u0000no\u0005 \u0000\u0000os\u0005\"\u0000\u0000pq\u0005 \u0000\u0000"+
+		"qs\u0003$\u0012\u0000rl\u0001\u0000\u0000\u0000rn\u0001\u0000\u0000\u0000"+
+		"rp\u0001\u0000\u0000\u0000s\u0015\u0001\u0000\u0000\u0000tw\u0005\u0001"+
+		"\u0000\u0000uw\u0005\u0002\u0000\u0000vt\u0001\u0000\u0000\u0000vu\u0001"+
+		"\u0000\u0000\u0000w\u0017\u0001\u0000\u0000\u0000xy\u0005\u0018\u0000"+
+		"\u0000yz\u0005\u0003\u0000\u0000z{\u0003 \u0010\u0000{|\u0005\u0004\u0000"+
+		"\u0000|}\u0005\u001e\u0000\u0000}~\u0003\u001e\u000f\u0000~\u0089\u0001"+
+		"\u0000\u0000\u0000\u007f\u0080\u0005\u0018\u0000\u0000\u0080\u0081\u0005"+
+		"\u0003\u0000\u0000\u0081\u0082\u0003 \u0010\u0000\u0082\u0083\u0005\u0004"+
+		"\u0000\u0000\u0083\u0084\u0005\u001e\u0000\u0000\u0084\u0085\u0003\u001e"+
+		"\u000f\u0000\u0085\u0086\u0005\u001f\u0000\u0000\u0086\u0087\u0003\u001e"+
+		"\u000f\u0000\u0087\u0089\u0001\u0000\u0000\u0000\u0088x\u0001\u0000\u0000"+
+		"\u0000\u0088\u007f\u0001\u0000\u0000\u0000\u0089\u0019\u0001\u0000\u0000"+
+		"\u0000\u008a\u008b\u0005\u0019\u0000\u0000\u008b\u008c\u0005\u0003\u0000"+
+		"\u0000\u008c\u008d\u0003 \u0010\u0000\u008d\u008e\u0005\u0004\u0000\u0000"+
+		"\u008e\u008f\u0003\u001e\u000f\u0000\u008f\u0098\u0001\u0000\u0000\u0000"+
+		"\u0090\u0091\u0005\u001a\u0000\u0000\u0091\u0092\u0003\u001e\u000f\u0000"+
+		"\u0092\u0093\u0005\u0019\u0000\u0000\u0093\u0094\u0005\u0003\u0000\u0000"+
+		"\u0094\u0095\u0003 \u0010\u0000\u0095\u0096\u0005\u0004\u0000\u0000\u0096"+
+		"\u0098\u0001\u0000\u0000\u0000\u0097\u008a\u0001\u0000\u0000\u0000\u0097"+
+		"\u0090\u0001\u0000\u0000\u0000\u0098\u001b\u0001\u0000\u0000\u0000\u0099"+
+		"\u009a\u0005\u001b\u0000\u0000\u009a\u009c\u0005\u0003\u0000\u0000\u009b"+
+		"\u009d\u0003\"\u0011\u0000\u009c\u009b\u0001\u0000\u0000\u0000\u009c\u009d"+
+		"\u0001\u0000\u0000\u0000\u009d\u009e\u0001\u0000\u0000\u0000\u009e\u00a0"+
+		"\u0005#\u0000\u0000\u009f\u00a1\u0003 \u0010\u0000\u00a0\u009f\u0001\u0000"+
+		"\u0000\u0000\u00a0\u00a1\u0001\u0000\u0000\u0000\u00a1\u00a2\u0001\u0000"+
+		"\u0000\u0000\u00a2\u00a4\u0005#\u0000\u0000\u00a3\u00a5\u0003\"\u0011"+
+		"\u0000\u00a4\u00a3\u0001\u0000\u0000\u0000\u00a4\u00a5\u0001\u0000\u0000"+
+		"\u0000\u00a5\u00a6\u0001\u0000\u0000\u0000\u00a6\u00a7\u0005\u0004\u0000"+
+		"\u0000\u00a7\u00a8\u0003\u001e\u000f\u0000\u00a8\u001d\u0001\u0000\u0000"+
+		"\u0000\u00a9\u00ab\u0005\u0005\u0000\u0000\u00aa\u00ac\u0003\f\u0006\u0000"+
+		"\u00ab\u00aa\u0001\u0000\u0000\u0000\u00ac\u00ad\u0001\u0000\u0000\u0000"+
+		"\u00ad\u00ab\u0001\u0000\u0000\u0000\u00ad\u00ae\u0001\u0000\u0000\u0000"+
+		"\u00ae\u00af\u0001\u0000\u0000\u0000\u00af\u00b0\u0005\u0006\u0000\u0000"+
+		"\u00b0\u001f\u0001\u0000\u0000\u0000\u00b1\u00b2\u0006\u0010\uffff\uffff"+
+		"\u0000\u00b2\u00ba\u0003$\u0012\u0000\u00b3\u00b4\u0003$\u0012\u0000\u00b4"+
+		"\u00b5\u0007\u0000\u0000\u0000\u00b5\u00b6\u0003$\u0012\u0000\u00b6\u00ba"+
+		"\u0001\u0000\u0000\u0000\u00b7\u00b8\u0005\u000f\u0000\u0000\u00b8\u00ba"+
+		"\u0003 \u0010\u0001\u00b9\u00b1\u0001\u0000\u0000\u0000\u00b9\u00b3\u0001"+
+		"\u0000\u0000\u0000\u00b9\u00b7\u0001\u0000\u0000\u0000\u00ba\u00c3\u0001"+
+		"\u0000\u0000\u0000\u00bb\u00bc\n\u0003\u0000\u0000\u00bc\u00bd\u0005\r"+
+		"\u0000\u0000\u00bd\u00c2\u0003 \u0010\u0004\u00be\u00bf\n\u0002\u0000"+
+		"\u0000\u00bf\u00c0\u0005\u000e\u0000\u0000\u00c0\u00c2\u0003 \u0010\u0003"+
+		"\u00c1\u00bb\u0001\u0000\u0000\u0000\u00c1\u00be\u0001\u0000\u0000\u0000"+
+		"\u00c2\u00c5\u0001\u0000\u0000\u0000\u00c3\u00c1\u0001\u0000\u0000\u0000"+
+		"\u00c3\u00c4\u0001\u0000\u0000\u0000\u00c4!\u0001\u0000\u0000\u0000\u00c5"+
+		"\u00c3\u0001\u0000\u0000\u0000\u00c6\u00c7\u0003\u0016\u000b\u0000\u00c7"+
+		"\u00c8\u0005%\u0000\u0000\u00c8\u00c9\u0005\u0007\u0000\u0000\u00c9\u00ca"+
+		"\u0003$\u0012\u0000\u00ca\u00d1\u0001\u0000\u0000\u0000\u00cb\u00cc\u0003"+
+		"\u0016\u000b\u0000\u00cc\u00cd\u0005%\u0000\u0000\u00cd\u00ce\u0005\u0007"+
+		"\u0000\u0000\u00ce\u00cf\u0005\"\u0000\u0000\u00cf\u00d1\u0001\u0000\u0000"+
+		"\u0000\u00d0\u00c6\u0001\u0000\u0000\u0000\u00d0\u00cb\u0001\u0000\u0000"+
+		"\u0000\u00d1#\u0001\u0000\u0000\u0000\u00d2\u00d3\u0003&\u0013\u0000\u00d3"+
+		"\u00d4\u0005\t\u0000\u0000\u00d4\u00d5\u0003$\u0012\u0000\u00d5\u00dc"+
+		"\u0001\u0000\u0000\u0000\u00d6\u00d7\u0003&\u0013\u0000\u00d7\u00d8\u0005"+
+		"\n\u0000\u0000\u00d8\u00d9\u0003$\u0012\u0000\u00d9\u00dc\u0001\u0000"+
+		"\u0000\u0000\u00da\u00dc\u0003&\u0013\u0000\u00db\u00d2\u0001\u0000\u0000"+
+		"\u0000\u00db\u00d6\u0001\u0000\u0000\u0000\u00db\u00da\u0001\u0000\u0000"+
+		"\u0000\u00dc%\u0001\u0000\u0000\u0000\u00dd\u00de\u0003(\u0014\u0000\u00de"+
+		"\u00df\u0005\u000b\u0000\u0000\u00df\u00e0\u0003&\u0013\u0000\u00e0\u00e7"+
+		"\u0001\u0000\u0000\u0000\u00e1\u00e2\u0003(\u0014\u0000\u00e2\u00e3\u0005"+
+		"\f\u0000\u0000\u00e3\u00e4\u0003&\u0013\u0000\u00e4\u00e7\u0001\u0000"+
+		"\u0000\u0000\u00e5\u00e7\u0003(\u0014\u0000\u00e6\u00dd\u0001\u0000\u0000"+
+		"\u0000\u00e6\u00e1\u0001\u0000\u0000\u0000\u00e6\u00e5\u0001\u0000\u0000"+
+		"\u0000\u00e7\'\u0001\u0000\u0000\u0000\u00e8\u00e9\u0005\u0003\u0000\u0000"+
+		"\u00e9\u00ea\u0003$\u0012\u0000\u00ea\u00eb\u0005\u0004\u0000\u0000\u00eb"+
+		"\u00ef\u0001\u0000\u0000\u0000\u00ec\u00ef\u0005%\u0000\u0000\u00ed\u00ef"+
+		"\u0005$\u0000\u0000\u00ee\u00e8\u0001\u0000\u0000\u0000\u00ee\u00ec\u0001"+
+		"\u0000\u0000\u0000\u00ee\u00ed\u0001\u0000\u0000\u0000\u00ef)\u0001\u0000"+
+		"\u0000\u0000\u0015.4KR[frv\u0088\u0097\u009c\u00a0\u00a4\u00ad\u00b9\u00c1"+
+		"\u00c3\u00d0\u00db\u00e6\u00ee";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

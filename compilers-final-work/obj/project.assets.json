@@ -43,11 +43,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\andre\\Downloads\\BLG-Compiler-main\\C#-Aula\\compilers-final-work\\compilers-final-work.csproj",
+      "projectUniqueName": "C:\\Users\\andre\\Documents\\GitHub\\compiladores\\compilers-final-work\\compilers-final-work.csproj",
       "projectName": "compilers-final-work",
-      "projectPath": "C:\\Users\\andre\\Downloads\\BLG-Compiler-main\\C#-Aula\\compilers-final-work\\compilers-final-work.csproj",
+      "projectPath": "C:\\Users\\andre\\Documents\\GitHub\\compiladores\\compilers-final-work\\compilers-final-work.csproj",
       "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\andre\\Downloads\\BLG-Compiler-main\\C#-Aula\\compilers-final-work\\obj\\",
+      "outputPath": "C:\\Users\\andre\\Documents\\GitHub\\compiladores\\compilers-final-work\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config"
