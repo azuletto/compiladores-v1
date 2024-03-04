@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generated from Lang.g4 by ANTLR 4.13.1
+// Generated from DAS.g4 by ANTLR 4.13.1
 
 // Unreachable code detected
 #pragma warning disable 0162
@@ -29,7 +29,7 @@ using DFA = Antlr4.Runtime.Dfa.DFA;
 
 [System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.13.1")]
 [System.CLSCompliant(false)]
-public partial class LangLexer : Lexer {
+public partial class DASLexer : Lexer {
 	protected static DFA[] decisionToDFA;
 	protected static PredictionContextCache sharedContextCache = new PredictionContextCache();
 	public const int
@@ -55,10 +55,10 @@ public partial class LangLexer : Lexer {
 	};
 
 
-	public LangLexer(ICharStream input)
+	public DASLexer(ICharStream input)
 	: this(input, Console.Out, Console.Error) { }
 
-	public LangLexer(ICharStream input, TextWriter output, TextWriter errorOutput)
+	public DASLexer(ICharStream input, TextWriter output, TextWriter errorOutput)
 	: base(input, output, errorOutput)
 	{
 		Interpreter = new LexerATNSimulator(this, _ATN, decisionToDFA, sharedContextCache);
@@ -88,7 +88,7 @@ public partial class LangLexer : Lexer {
 		}
 	}
 
-	public override string GrammarFileName { get { return "Lang.g4"; } }
+	public override string GrammarFileName { get { return "DAS.g4"; } }
 
 	public override string[] RuleNames { get { return ruleNames; } }
 
@@ -98,7 +98,7 @@ public partial class LangLexer : Lexer {
 
 	public override int[] SerializedAtn { get { return _serializedATN; } }
 
-	static LangLexer() {
+	static DASLexer() {
 		decisionToDFA = new DFA[_ATN.NumberOfDecisions];
 		for (int i = 0; i < _ATN.NumberOfDecisions; i++) {
 			decisionToDFA[i] = new DFA(_ATN.GetDecisionState(i), i);

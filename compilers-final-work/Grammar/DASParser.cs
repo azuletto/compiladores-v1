@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generated from Lang.g4 by ANTLR 4.13.1
+// Generated from DAS.g4 by ANTLR 4.13.1
 
 // Unreachable code detected
 #pragma warning disable 0162
@@ -32,7 +32,7 @@ using DFA = Antlr4.Runtime.Dfa.DFA;
 
 [System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.13.1")]
 [System.CLSCompliant(false)]
-public partial class LangParser : Parser {
+public partial class DASParser : Parser {
 	protected static DFA[] decisionToDFA;
 	protected static PredictionContextCache sharedContextCache = new PredictionContextCache();
 	public const int
@@ -77,22 +77,22 @@ public partial class LangParser : Parser {
 		}
 	}
 
-	public override string GrammarFileName { get { return "Lang.g4"; } }
+	public override string GrammarFileName { get { return "DAS.g4"; } }
 
 	public override string[] RuleNames { get { return ruleNames; } }
 
 	public override int[] SerializedAtn { get { return _serializedATN; } }
 
-	static LangParser() {
+	static DASParser() {
 		decisionToDFA = new DFA[_ATN.NumberOfDecisions];
 		for (int i = 0; i < _ATN.NumberOfDecisions; i++) {
 			decisionToDFA[i] = new DFA(_ATN.GetDecisionState(i), i);
 		}
 	}
 
-		public LangParser(ITokenStream input) : this(input, Console.Out, Console.Error) { }
+		public DASParser(ITokenStream input) : this(input, Console.Out, Console.Error) { }
 
-		public LangParser(ITokenStream input, TextWriter output, TextWriter errorOutput)
+		public DASParser(ITokenStream input, TextWriter output, TextWriter errorOutput)
 		: base(input, output, errorOutput)
 	{
 		Interpreter = new ParserATNSimulator(this, _ATN, decisionToDFA, sharedContextCache);
@@ -123,12 +123,12 @@ public partial class LangParser : Parser {
 		public ProgLineContext(ProgContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterProgLine(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitProgLine(this);
 		}
 	}
@@ -185,12 +185,12 @@ public partial class LangParser : Parser {
 		public override int RuleIndex { get { return RULE_functions; } }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterFunctions(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitFunctions(this);
 		}
 	}
@@ -241,13 +241,13 @@ public partial class LangParser : Parser {
 	}
 
 	public partial class FunctionContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode FUNCTION() { return GetToken(LangParser.FUNCTION, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode VAR() { return GetToken(LangParser.VAR, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OE() { return GetToken(LangParser.OE, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode FUNCTION() { return GetToken(DASParser.FUNCTION, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode VAR() { return GetToken(DASParser.VAR, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OE() { return GetToken(DASParser.OE, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ParamsContext @params() {
 			return GetRuleContext<ParamsContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CE() { return GetToken(LangParser.CE, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CE() { return GetToken(DASParser.CE, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public FnBlockContext fnBlock() {
 			return GetRuleContext<FnBlockContext>(0);
 		}
@@ -258,12 +258,12 @@ public partial class LangParser : Parser {
 		public override int RuleIndex { get { return RULE_function; } }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterFunction(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitFunction(this);
 		}
 	}
@@ -319,12 +319,12 @@ public partial class LangParser : Parser {
 		public FnBlockLineContext(FnBlockContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterFnBlockLine(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitFnBlockLine(this);
 		}
 	}
@@ -369,17 +369,17 @@ public partial class LangParser : Parser {
 		}
 	}
 	public partial class FnReturnLineContext : FnBodyContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RETURN() { return GetToken(LangParser.RETURN, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EOL() { return GetToken(LangParser.EOL, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RETURN() { return GetToken(DASParser.RETURN, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EOL() { return GetToken(DASParser.EOL, 0); }
 		public FnReturnLineContext(FnBodyContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterFnReturnLine(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitFnReturnLine(this);
 		}
 	}
@@ -390,30 +390,30 @@ public partial class LangParser : Parser {
 		public FnBodyLineContext(FnBodyContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterFnBodyLine(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitFnBodyLine(this);
 		}
 	}
 	public partial class FnReturnExprLineContext : FnBodyContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RETURN() { return GetToken(LangParser.RETURN, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode RETURN() { return GetToken(DASParser.RETURN, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ExprContext expr() {
 			return GetRuleContext<ExprContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EOL() { return GetToken(LangParser.EOL, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EOL() { return GetToken(DASParser.EOL, 0); }
 		public FnReturnExprLineContext(FnBodyContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterFnReturnExprLine(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitFnReturnExprLine(this);
 		}
 	}
@@ -427,12 +427,12 @@ public partial class LangParser : Parser {
 		public FnBodyLineMoreContext(FnBodyContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterFnBodyLineMore(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitFnBodyLineMore(this);
 		}
 	}
@@ -499,8 +499,8 @@ public partial class LangParser : Parser {
 	}
 
 	public partial class ParamsContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode VAR() { return GetToken(LangParser.VAR, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEP() { return GetToken(LangParser.SEP, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode VAR() { return GetToken(DASParser.VAR, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode SEP() { return GetToken(DASParser.SEP, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ParamsContext @params() {
 			return GetRuleContext<ParamsContext>(0);
 		}
@@ -511,12 +511,12 @@ public partial class LangParser : Parser {
 		public override int RuleIndex { get { return RULE_params; } }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterParams(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitParams(this);
 		}
 	}
@@ -584,26 +584,26 @@ public partial class LangParser : Parser {
 		public LineWhileContext(LineContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterLineWhile(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitLineWhile(this);
 		}
 	}
 	public partial class LineEOLContext : LineContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EOL() { return GetToken(LangParser.EOL, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EOL() { return GetToken(DASParser.EOL, 0); }
 		public LineEOLContext(LineContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterLineEOL(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitLineEOL(this);
 		}
 	}
@@ -611,16 +611,16 @@ public partial class LangParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public StmtContext stmt() {
 			return GetRuleContext<StmtContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EOL() { return GetToken(LangParser.EOL, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EOL() { return GetToken(DASParser.EOL, 0); }
 		public LineStmtContext(LineContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterLineStmt(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitLineStmt(this);
 		}
 	}
@@ -631,12 +631,12 @@ public partial class LangParser : Parser {
 		public LineIfContext(LineContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterLineIf(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitLineIf(this);
 		}
 	}
@@ -647,12 +647,12 @@ public partial class LangParser : Parser {
 		public LineForContext(LineContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterLineFor(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitLineFor(this);
 		}
 	}
@@ -739,21 +739,21 @@ public partial class LangParser : Parser {
 		}
 	}
 	public partial class FuncInvocLineContext : FuncInvocContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode VAR() { return GetToken(LangParser.VAR, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OE() { return GetToken(LangParser.OE, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode VAR() { return GetToken(DASParser.VAR, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OE() { return GetToken(DASParser.OE, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ParamsContext @params() {
 			return GetRuleContext<ParamsContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CE() { return GetToken(LangParser.CE, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CE() { return GetToken(DASParser.CE, 0); }
 		public FuncInvocLineContext(FuncInvocContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterFuncInvocLine(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitFuncInvocLine(this);
 		}
 	}
@@ -806,12 +806,12 @@ public partial class LangParser : Parser {
 		public StmtOutputContext(StmtContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterStmtOutput(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitStmtOutput(this);
 		}
 	}
@@ -822,12 +822,12 @@ public partial class LangParser : Parser {
 		public StmtInputContext(StmtContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterStmtInput(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitStmtInput(this);
 		}
 	}
@@ -838,12 +838,12 @@ public partial class LangParser : Parser {
 		public StmtAtribContext(StmtContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterStmtAtrib(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitStmtAtrib(this);
 		}
 	}
@@ -854,12 +854,12 @@ public partial class LangParser : Parser {
 		public LineFuncInvocContext(StmtContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterLineFuncInvoc(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitLineFuncInvoc(this);
 		}
 	}
@@ -933,17 +933,17 @@ public partial class LangParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public TipoContext tipo() {
 			return GetRuleContext<TipoContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode READ() { return GetToken(LangParser.READ, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode VAR() { return GetToken(LangParser.VAR, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode READ() { return GetToken(DASParser.READ, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode VAR() { return GetToken(DASParser.VAR, 0); }
 		public InputReadContext(InputContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterInputRead(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitInputRead(this);
 		}
 	}
@@ -988,49 +988,49 @@ public partial class LangParser : Parser {
 		}
 	}
 	public partial class OutputWriteStrContext : OutputContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode WRITE() { return GetToken(LangParser.WRITE, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STR() { return GetToken(LangParser.STR, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode WRITE() { return GetToken(DASParser.WRITE, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STR() { return GetToken(DASParser.STR, 0); }
 		public OutputWriteStrContext(OutputContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterOutputWriteStr(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitOutputWriteStr(this);
 		}
 	}
 	public partial class OutputWriteVarContext : OutputContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode WRITE() { return GetToken(LangParser.WRITE, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode VAR() { return GetToken(LangParser.VAR, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode WRITE() { return GetToken(DASParser.WRITE, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode VAR() { return GetToken(DASParser.VAR, 0); }
 		public OutputWriteVarContext(OutputContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterOutputWriteVar(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitOutputWriteVar(this);
 		}
 	}
 	public partial class OutputWriteExprContext : OutputContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode WRITE() { return GetToken(LangParser.WRITE, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode WRITE() { return GetToken(DASParser.WRITE, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ExprContext expr() {
 			return GetRuleContext<ExprContext>(0);
 		}
 		public OutputWriteExprContext(OutputContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterOutputWriteExpr(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitOutputWriteExpr(this);
 		}
 	}
@@ -1102,12 +1102,12 @@ public partial class LangParser : Parser {
 		public TipoNumeroContext(TipoContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterTipoNumero(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitTipoNumero(this);
 		}
 	}
@@ -1115,12 +1115,12 @@ public partial class LangParser : Parser {
 		public TipoTextoContext(TipoContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterTipoTexto(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitTipoTexto(this);
 		}
 	}
@@ -1179,14 +1179,14 @@ public partial class LangParser : Parser {
 	public partial class IfstIfElseContext : IfstContext {
 		public BlockContext b1;
 		public BlockContext b2;
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode IF() { return GetToken(LangParser.IF, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OE() { return GetToken(LangParser.OE, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode IF() { return GetToken(DASParser.IF, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OE() { return GetToken(DASParser.OE, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public CondContext cond() {
 			return GetRuleContext<CondContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CE() { return GetToken(LangParser.CE, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode THEN() { return GetToken(LangParser.THEN, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ELSE() { return GetToken(LangParser.ELSE, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CE() { return GetToken(DASParser.CE, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode THEN() { return GetToken(DASParser.THEN, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ELSE() { return GetToken(DASParser.ELSE, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public BlockContext[] block() {
 			return GetRuleContexts<BlockContext>();
 		}
@@ -1196,35 +1196,35 @@ public partial class LangParser : Parser {
 		public IfstIfElseContext(IfstContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterIfstIfElse(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitIfstIfElse(this);
 		}
 	}
 	public partial class IfstIfContext : IfstContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode IF() { return GetToken(LangParser.IF, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OE() { return GetToken(LangParser.OE, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode IF() { return GetToken(DASParser.IF, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OE() { return GetToken(DASParser.OE, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public CondContext cond() {
 			return GetRuleContext<CondContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CE() { return GetToken(LangParser.CE, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode THEN() { return GetToken(LangParser.THEN, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CE() { return GetToken(DASParser.CE, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode THEN() { return GetToken(DASParser.THEN, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public BlockContext block() {
 			return GetRuleContext<BlockContext>(0);
 		}
 		public IfstIfContext(IfstContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterIfstIf(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitIfstIf(this);
 		}
 	}
@@ -1303,47 +1303,47 @@ public partial class LangParser : Parser {
 		}
 	}
 	public partial class WhilestDoWhileContext : WhilestContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DO() { return GetToken(LangParser.DO, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DO() { return GetToken(DASParser.DO, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public BlockContext block() {
 			return GetRuleContext<BlockContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode WHILE() { return GetToken(LangParser.WHILE, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OE() { return GetToken(LangParser.OE, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode WHILE() { return GetToken(DASParser.WHILE, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OE() { return GetToken(DASParser.OE, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public CondContext cond() {
 			return GetRuleContext<CondContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CE() { return GetToken(LangParser.CE, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CE() { return GetToken(DASParser.CE, 0); }
 		public WhilestDoWhileContext(WhilestContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterWhilestDoWhile(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitWhilestDoWhile(this);
 		}
 	}
 	public partial class WhilestWhileContext : WhilestContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode WHILE() { return GetToken(LangParser.WHILE, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OE() { return GetToken(LangParser.OE, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode WHILE() { return GetToken(DASParser.WHILE, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OE() { return GetToken(DASParser.OE, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public CondContext cond() {
 			return GetRuleContext<CondContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CE() { return GetToken(LangParser.CE, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CE() { return GetToken(DASParser.CE, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public BlockContext block() {
 			return GetRuleContext<BlockContext>(0);
 		}
 		public WhilestWhileContext(WhilestContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterWhilestWhile(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitWhilestWhile(this);
 		}
 	}
@@ -1418,13 +1418,13 @@ public partial class LangParser : Parser {
 		}
 	}
 	public partial class ForstForContext : ForstContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode FOR() { return GetToken(LangParser.FOR, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OE() { return GetToken(LangParser.OE, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] EOL() { return GetTokens(LangParser.EOL); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode FOR() { return GetToken(DASParser.FOR, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OE() { return GetToken(DASParser.OE, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode[] EOL() { return GetTokens(DASParser.EOL); }
 		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EOL(int i) {
-			return GetToken(LangParser.EOL, i);
+			return GetToken(DASParser.EOL, i);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CE() { return GetToken(LangParser.CE, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CE() { return GetToken(DASParser.CE, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public BlockContext block() {
 			return GetRuleContext<BlockContext>(0);
 		}
@@ -1440,12 +1440,12 @@ public partial class LangParser : Parser {
 		public ForstForContext(ForstContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterForstFor(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitForstFor(this);
 		}
 	}
@@ -1536,12 +1536,12 @@ public partial class LangParser : Parser {
 		public BlockLineContext(BlockContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterBlockLine(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitBlockLine(this);
 		}
 	}
@@ -1608,21 +1608,21 @@ public partial class LangParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public ExprContext expr(int i) {
 			return GetRuleContext<ExprContext>(i);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQ() { return GetToken(LangParser.EQ, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode NE() { return GetToken(LangParser.NE, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LT() { return GetToken(LangParser.LT, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode GT() { return GetToken(LangParser.GT, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LE() { return GetToken(LangParser.LE, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode GE() { return GetToken(LangParser.GE, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode EQ() { return GetToken(DASParser.EQ, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode NE() { return GetToken(DASParser.NE, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LT() { return GetToken(DASParser.LT, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode GT() { return GetToken(DASParser.GT, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode LE() { return GetToken(DASParser.LE, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode GE() { return GetToken(DASParser.GE, 0); }
 		public CondRelopContext(CondContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterCondRelop(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitCondRelop(this);
 		}
 	}
@@ -1633,19 +1633,19 @@ public partial class LangParser : Parser {
 		public CondExprContext(CondContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterCondExpr(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitCondExpr(this);
 		}
 	}
 	public partial class CondAndContext : CondContext {
 		public CondContext c1;
 		public CondContext c2;
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode AND() { return GetToken(LangParser.AND, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode AND() { return GetToken(DASParser.AND, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public CondContext[] cond() {
 			return GetRuleContexts<CondContext>();
 		}
@@ -1655,19 +1655,19 @@ public partial class LangParser : Parser {
 		public CondAndContext(CondContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterCondAnd(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitCondAnd(this);
 		}
 	}
 	public partial class CondOrContext : CondContext {
 		public CondContext c1;
 		public CondContext c2;
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OR() { return GetToken(LangParser.OR, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OR() { return GetToken(DASParser.OR, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public CondContext[] cond() {
 			return GetRuleContexts<CondContext>();
 		}
@@ -1677,29 +1677,29 @@ public partial class LangParser : Parser {
 		public CondOrContext(CondContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterCondOr(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitCondOr(this);
 		}
 	}
 	public partial class CondNotContext : CondContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode NOT() { return GetToken(LangParser.NOT, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode NOT() { return GetToken(DASParser.NOT, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public CondContext cond() {
 			return GetRuleContext<CondContext>(0);
 		}
 		public CondNotContext(CondContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterCondNot(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitCondNot(this);
 		}
 	}
@@ -1842,18 +1842,18 @@ public partial class LangParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public TipoContext tipo() {
 			return GetRuleContext<TipoContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode VAR() { return GetToken(LangParser.VAR, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode AT() { return GetToken(LangParser.AT, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STR() { return GetToken(LangParser.STR, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode VAR() { return GetToken(DASParser.VAR, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode AT() { return GetToken(DASParser.AT, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode STR() { return GetToken(DASParser.STR, 0); }
 		public AtribVarStrContext(AtribContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterAtribVarStr(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitAtribVarStr(this);
 		}
 	}
@@ -1861,20 +1861,20 @@ public partial class LangParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public TipoContext tipo() {
 			return GetRuleContext<TipoContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode VAR() { return GetToken(LangParser.VAR, 0); }
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode AT() { return GetToken(LangParser.AT, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode VAR() { return GetToken(DASParser.VAR, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode AT() { return GetToken(DASParser.AT, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ExprContext expr() {
 			return GetRuleContext<ExprContext>(0);
 		}
 		public AtribVarContext(AtribContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterAtribVar(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitAtribVar(this);
 		}
 	}
@@ -1944,19 +1944,19 @@ public partial class LangParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public TermContext term() {
 			return GetRuleContext<TermContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode PLUS() { return GetToken(LangParser.PLUS, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode PLUS() { return GetToken(DASParser.PLUS, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ExprContext expr() {
 			return GetRuleContext<ExprContext>(0);
 		}
 		public ExprPlusContext(ExprContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterExprPlus(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitExprPlus(this);
 		}
 	}
@@ -1964,19 +1964,19 @@ public partial class LangParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public TermContext term() {
 			return GetRuleContext<TermContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode MINUS() { return GetToken(LangParser.MINUS, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode MINUS() { return GetToken(DASParser.MINUS, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ExprContext expr() {
 			return GetRuleContext<ExprContext>(0);
 		}
 		public ExprMinusContext(ExprContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterExprMinus(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitExprMinus(this);
 		}
 	}
@@ -1987,12 +1987,12 @@ public partial class LangParser : Parser {
 		public ExprTermContext(ExprContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterExprTerm(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitExprTerm(this);
 		}
 	}
@@ -2066,19 +2066,19 @@ public partial class LangParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public FactorContext factor() {
 			return GetRuleContext<FactorContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DIV() { return GetToken(LangParser.DIV, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode DIV() { return GetToken(DASParser.DIV, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public TermContext term() {
 			return GetRuleContext<TermContext>(0);
 		}
 		public TermDivContext(TermContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterTermDiv(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitTermDiv(this);
 		}
 	}
@@ -2086,19 +2086,19 @@ public partial class LangParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public FactorContext factor() {
 			return GetRuleContext<FactorContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode MULT() { return GetToken(LangParser.MULT, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode MULT() { return GetToken(DASParser.MULT, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public TermContext term() {
 			return GetRuleContext<TermContext>(0);
 		}
 		public TermMultContext(TermContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterTermMult(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitTermMult(this);
 		}
 	}
@@ -2109,12 +2109,12 @@ public partial class LangParser : Parser {
 		public TermFactorContext(TermContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterTermFactor(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitTermFactor(this);
 		}
 	}
@@ -2185,48 +2185,48 @@ public partial class LangParser : Parser {
 		}
 	}
 	public partial class FactorNumContext : FactorContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode NUM() { return GetToken(LangParser.NUM, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode NUM() { return GetToken(DASParser.NUM, 0); }
 		public FactorNumContext(FactorContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterFactorNum(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitFactorNum(this);
 		}
 	}
 	public partial class FactorVarContext : FactorContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode VAR() { return GetToken(LangParser.VAR, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode VAR() { return GetToken(DASParser.VAR, 0); }
 		public FactorVarContext(FactorContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterFactorVar(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitFactorVar(this);
 		}
 	}
 	public partial class FactorExprContext : FactorContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OE() { return GetToken(LangParser.OE, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode OE() { return GetToken(DASParser.OE, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ExprContext expr() {
 			return GetRuleContext<ExprContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CE() { return GetToken(LangParser.CE, 0); }
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode CE() { return GetToken(DASParser.CE, 0); }
 		public FactorExprContext(FactorContext context) { CopyFrom(context); }
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void EnterRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.EnterFactorExpr(this);
 		}
 		[System.Diagnostics.DebuggerNonUserCode]
 		public override void ExitRule(IParseTreeListener listener) {
-			ILangListener typedListener = listener as ILangListener;
+			IDASListener typedListener = listener as IDASListener;
 			if (typedListener != null) typedListener.ExitFactorExpr(this);
 		}
 	}

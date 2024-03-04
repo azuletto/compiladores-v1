@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generated from Lang.g4 by ANTLR 4.7.2
+// Generated from DAS.g4 by ANTLR 4.7.2
 
 // Unreachable code detected
 #pragma warning disable 0162
@@ -26,337 +26,337 @@ using IToken = Antlr4.Runtime.IToken;
 
 /// <summary>
 /// This interface defines a complete generic visitor for a parse tree produced
-/// by <see cref="LangParser"/>.
+/// by <see cref="DASParser"/>.
 /// </summary>
 /// <typeparam name="Result">The return type of the visit operation.</typeparam>
 [System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.7.2")]
 [System.CLSCompliant(false)]
-public interface ILangVisitor<Result> : IParseTreeVisitor<Result> {
+public interface IDASVisitor<Result> : IParseTreeVisitor<Result> {
 	/// <summary>
 	/// Visit a parse tree produced by the <c>progLine</c>
-	/// labeled alternative in <see cref="LangParser.prog"/>.
+	/// labeled alternative in <see cref="DASParser.prog"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitProgLine([NotNull] LangParser.ProgLineContext context);
+	Result VisitProgLine([NotNull] DASParser.ProgLineContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="LangParser.functions"/>.
+	/// Visit a parse tree produced by <see cref="DASParser.functions"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitFunctions([NotNull] LangParser.FunctionsContext context);
+	Result VisitFunctions([NotNull] DASParser.FunctionsContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="LangParser.function"/>.
+	/// Visit a parse tree produced by <see cref="DASParser.function"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitFunction([NotNull] LangParser.FunctionContext context);
+	Result VisitFunction([NotNull] DASParser.FunctionContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>fnBlockLine</c>
-	/// labeled alternative in <see cref="LangParser.fnBlock"/>.
+	/// labeled alternative in <see cref="DASParser.fnBlock"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitFnBlockLine([NotNull] LangParser.FnBlockLineContext context);
+	Result VisitFnBlockLine([NotNull] DASParser.FnBlockLineContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>fnBodyLine</c>
-	/// labeled alternative in <see cref="LangParser.fnBody"/>.
+	/// labeled alternative in <see cref="DASParser.fnBody"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitFnBodyLine([NotNull] LangParser.FnBodyLineContext context);
+	Result VisitFnBodyLine([NotNull] DASParser.FnBodyLineContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>fnBodyLineMore</c>
-	/// labeled alternative in <see cref="LangParser.fnBody"/>.
+	/// labeled alternative in <see cref="DASParser.fnBody"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitFnBodyLineMore([NotNull] LangParser.FnBodyLineMoreContext context);
+	Result VisitFnBodyLineMore([NotNull] DASParser.FnBodyLineMoreContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>fnReturnExprLine</c>
-	/// labeled alternative in <see cref="LangParser.fnBody"/>.
+	/// labeled alternative in <see cref="DASParser.fnBody"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitFnReturnExprLine([NotNull] LangParser.FnReturnExprLineContext context);
+	Result VisitFnReturnExprLine([NotNull] DASParser.FnReturnExprLineContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>fnReturnLine</c>
-	/// labeled alternative in <see cref="LangParser.fnBody"/>.
+	/// labeled alternative in <see cref="DASParser.fnBody"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitFnReturnLine([NotNull] LangParser.FnReturnLineContext context);
+	Result VisitFnReturnLine([NotNull] DASParser.FnReturnLineContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="LangParser.params"/>.
+	/// Visit a parse tree produced by <see cref="DASParser.params"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitParams([NotNull] LangParser.ParamsContext context);
+	Result VisitParams([NotNull] DASParser.ParamsContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>lineStmt</c>
-	/// labeled alternative in <see cref="LangParser.line"/>.
+	/// labeled alternative in <see cref="DASParser.line"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitLineStmt([NotNull] LangParser.LineStmtContext context);
+	Result VisitLineStmt([NotNull] DASParser.LineStmtContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>lineIf</c>
-	/// labeled alternative in <see cref="LangParser.line"/>.
+	/// labeled alternative in <see cref="DASParser.line"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitLineIf([NotNull] LangParser.LineIfContext context);
+	Result VisitLineIf([NotNull] DASParser.LineIfContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>lineWhile</c>
-	/// labeled alternative in <see cref="LangParser.line"/>.
+	/// labeled alternative in <see cref="DASParser.line"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitLineWhile([NotNull] LangParser.LineWhileContext context);
+	Result VisitLineWhile([NotNull] DASParser.LineWhileContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>lineFor</c>
-	/// labeled alternative in <see cref="LangParser.line"/>.
+	/// labeled alternative in <see cref="DASParser.line"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitLineFor([NotNull] LangParser.LineForContext context);
+	Result VisitLineFor([NotNull] DASParser.LineForContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>lineEOL</c>
-	/// labeled alternative in <see cref="LangParser.line"/>.
+	/// labeled alternative in <see cref="DASParser.line"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitLineEOL([NotNull] LangParser.LineEOLContext context);
+	Result VisitLineEOL([NotNull] DASParser.LineEOLContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>funcInvocLine</c>
-	/// labeled alternative in <see cref="LangParser.funcInvoc"/>.
+	/// labeled alternative in <see cref="DASParser.funcInvoc"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitFuncInvocLine([NotNull] LangParser.FuncInvocLineContext context);
+	Result VisitFuncInvocLine([NotNull] DASParser.FuncInvocLineContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>stmtAtrib</c>
-	/// labeled alternative in <see cref="LangParser.stmt"/>.
+	/// labeled alternative in <see cref="DASParser.stmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitStmtAtrib([NotNull] LangParser.StmtAtribContext context);
+	Result VisitStmtAtrib([NotNull] DASParser.StmtAtribContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>stmtInput</c>
-	/// labeled alternative in <see cref="LangParser.stmt"/>.
+	/// labeled alternative in <see cref="DASParser.stmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitStmtInput([NotNull] LangParser.StmtInputContext context);
+	Result VisitStmtInput([NotNull] DASParser.StmtInputContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>stmtOutput</c>
-	/// labeled alternative in <see cref="LangParser.stmt"/>.
+	/// labeled alternative in <see cref="DASParser.stmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitStmtOutput([NotNull] LangParser.StmtOutputContext context);
+	Result VisitStmtOutput([NotNull] DASParser.StmtOutputContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>lineFuncInvoc</c>
-	/// labeled alternative in <see cref="LangParser.stmt"/>.
+	/// labeled alternative in <see cref="DASParser.stmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitLineFuncInvoc([NotNull] LangParser.LineFuncInvocContext context);
+	Result VisitLineFuncInvoc([NotNull] DASParser.LineFuncInvocContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>inputRead</c>
-	/// labeled alternative in <see cref="LangParser.input"/>.
+	/// labeled alternative in <see cref="DASParser.input"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitInputRead([NotNull] LangParser.InputReadContext context);
+	Result VisitInputRead([NotNull] DASParser.InputReadContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>outputWriteVar</c>
-	/// labeled alternative in <see cref="LangParser.output"/>.
+	/// labeled alternative in <see cref="DASParser.output"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitOutputWriteVar([NotNull] LangParser.OutputWriteVarContext context);
+	Result VisitOutputWriteVar([NotNull] DASParser.OutputWriteVarContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>outputWriteStr</c>
-	/// labeled alternative in <see cref="LangParser.output"/>.
+	/// labeled alternative in <see cref="DASParser.output"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitOutputWriteStr([NotNull] LangParser.OutputWriteStrContext context);
+	Result VisitOutputWriteStr([NotNull] DASParser.OutputWriteStrContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>outputWriteExpr</c>
-	/// labeled alternative in <see cref="LangParser.output"/>.
+	/// labeled alternative in <see cref="DASParser.output"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitOutputWriteExpr([NotNull] LangParser.OutputWriteExprContext context);
+	Result VisitOutputWriteExpr([NotNull] DASParser.OutputWriteExprContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>tipoNumero</c>
-	/// labeled alternative in <see cref="LangParser.tipo"/>.
+	/// labeled alternative in <see cref="DASParser.tipo"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitTipoNumero([NotNull] LangParser.TipoNumeroContext context);
+	Result VisitTipoNumero([NotNull] DASParser.TipoNumeroContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>tipoTexto</c>
-	/// labeled alternative in <see cref="LangParser.tipo"/>.
+	/// labeled alternative in <see cref="DASParser.tipo"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitTipoTexto([NotNull] LangParser.TipoTextoContext context);
+	Result VisitTipoTexto([NotNull] DASParser.TipoTextoContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>ifstIf</c>
-	/// labeled alternative in <see cref="LangParser.ifst"/>.
+	/// labeled alternative in <see cref="DASParser.ifst"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitIfstIf([NotNull] LangParser.IfstIfContext context);
+	Result VisitIfstIf([NotNull] DASParser.IfstIfContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>ifstIfElse</c>
-	/// labeled alternative in <see cref="LangParser.ifst"/>.
+	/// labeled alternative in <see cref="DASParser.ifst"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitIfstIfElse([NotNull] LangParser.IfstIfElseContext context);
+	Result VisitIfstIfElse([NotNull] DASParser.IfstIfElseContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>whilestWhile</c>
-	/// labeled alternative in <see cref="LangParser.whilest"/>.
+	/// labeled alternative in <see cref="DASParser.whilest"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitWhilestWhile([NotNull] LangParser.WhilestWhileContext context);
+	Result VisitWhilestWhile([NotNull] DASParser.WhilestWhileContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>whilestDoWhile</c>
-	/// labeled alternative in <see cref="LangParser.whilest"/>.
+	/// labeled alternative in <see cref="DASParser.whilest"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitWhilestDoWhile([NotNull] LangParser.WhilestDoWhileContext context);
+	Result VisitWhilestDoWhile([NotNull] DASParser.WhilestDoWhileContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>forstFor</c>
-	/// labeled alternative in <see cref="LangParser.forst"/>.
+	/// labeled alternative in <see cref="DASParser.forst"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitForstFor([NotNull] LangParser.ForstForContext context);
+	Result VisitForstFor([NotNull] DASParser.ForstForContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>blockLine</c>
-	/// labeled alternative in <see cref="LangParser.block"/>.
+	/// labeled alternative in <see cref="DASParser.block"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitBlockLine([NotNull] LangParser.BlockLineContext context);
+	Result VisitBlockLine([NotNull] DASParser.BlockLineContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>condRelop</c>
-	/// labeled alternative in <see cref="LangParser.cond"/>.
+	/// labeled alternative in <see cref="DASParser.cond"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitCondRelop([NotNull] LangParser.CondRelopContext context);
+	Result VisitCondRelop([NotNull] DASParser.CondRelopContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>condExpr</c>
-	/// labeled alternative in <see cref="LangParser.cond"/>.
+	/// labeled alternative in <see cref="DASParser.cond"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitCondExpr([NotNull] LangParser.CondExprContext context);
+	Result VisitCondExpr([NotNull] DASParser.CondExprContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>condAnd</c>
-	/// labeled alternative in <see cref="LangParser.cond"/>.
+	/// labeled alternative in <see cref="DASParser.cond"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitCondAnd([NotNull] LangParser.CondAndContext context);
+	Result VisitCondAnd([NotNull] DASParser.CondAndContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>condOr</c>
-	/// labeled alternative in <see cref="LangParser.cond"/>.
+	/// labeled alternative in <see cref="DASParser.cond"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitCondOr([NotNull] LangParser.CondOrContext context);
+	Result VisitCondOr([NotNull] DASParser.CondOrContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>condNot</c>
-	/// labeled alternative in <see cref="LangParser.cond"/>.
+	/// labeled alternative in <see cref="DASParser.cond"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitCondNot([NotNull] LangParser.CondNotContext context);
+	Result VisitCondNot([NotNull] DASParser.CondNotContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>atribVar</c>
-	/// labeled alternative in <see cref="LangParser.atrib"/>.
+	/// labeled alternative in <see cref="DASParser.atrib"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitAtribVar([NotNull] LangParser.AtribVarContext context);
+	Result VisitAtribVar([NotNull] DASParser.AtribVarContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>atribVarStr</c>
-	/// labeled alternative in <see cref="LangParser.atrib"/>.
+	/// labeled alternative in <see cref="DASParser.atrib"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitAtribVarStr([NotNull] LangParser.AtribVarStrContext context);
+	Result VisitAtribVarStr([NotNull] DASParser.AtribVarStrContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>exprPlus</c>
-	/// labeled alternative in <see cref="LangParser.expr"/>.
+	/// labeled alternative in <see cref="DASParser.expr"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitExprPlus([NotNull] LangParser.ExprPlusContext context);
+	Result VisitExprPlus([NotNull] DASParser.ExprPlusContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>exprMinus</c>
-	/// labeled alternative in <see cref="LangParser.expr"/>.
+	/// labeled alternative in <see cref="DASParser.expr"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitExprMinus([NotNull] LangParser.ExprMinusContext context);
+	Result VisitExprMinus([NotNull] DASParser.ExprMinusContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>exprTerm</c>
-	/// labeled alternative in <see cref="LangParser.expr"/>.
+	/// labeled alternative in <see cref="DASParser.expr"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitExprTerm([NotNull] LangParser.ExprTermContext context);
+	Result VisitExprTerm([NotNull] DASParser.ExprTermContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>termMult</c>
-	/// labeled alternative in <see cref="LangParser.term"/>.
+	/// labeled alternative in <see cref="DASParser.term"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitTermMult([NotNull] LangParser.TermMultContext context);
+	Result VisitTermMult([NotNull] DASParser.TermMultContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>termDiv</c>
-	/// labeled alternative in <see cref="LangParser.term"/>.
+	/// labeled alternative in <see cref="DASParser.term"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitTermDiv([NotNull] LangParser.TermDivContext context);
+	Result VisitTermDiv([NotNull] DASParser.TermDivContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>termFactor</c>
-	/// labeled alternative in <see cref="LangParser.term"/>.
+	/// labeled alternative in <see cref="DASParser.term"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitTermFactor([NotNull] LangParser.TermFactorContext context);
+	Result VisitTermFactor([NotNull] DASParser.TermFactorContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>factorExpr</c>
-	/// labeled alternative in <see cref="LangParser.factor"/>.
+	/// labeled alternative in <see cref="DASParser.factor"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitFactorExpr([NotNull] LangParser.FactorExprContext context);
+	Result VisitFactorExpr([NotNull] DASParser.FactorExprContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>factorVar</c>
-	/// labeled alternative in <see cref="LangParser.factor"/>.
+	/// labeled alternative in <see cref="DASParser.factor"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitFactorVar([NotNull] LangParser.FactorVarContext context);
+	Result VisitFactorVar([NotNull] DASParser.FactorVarContext context);
 	/// <summary>
 	/// Visit a parse tree produced by the <c>factorNum</c>
-	/// labeled alternative in <see cref="LangParser.factor"/>.
+	/// labeled alternative in <see cref="DASParser.factor"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitFactorNum([NotNull] LangParser.FactorNumContext context);
+	Result VisitFactorNum([NotNull] DASParser.FactorNumContext context);
 }
 } // namespace Grammar

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generated from Lang.g4 by ANTLR 4.13.1
+// Generated from DAS.g4 by ANTLR 4.13.1
 
 // Unreachable code detected
 #pragma warning disable 0162
@@ -25,567 +25,567 @@ using IToken = Antlr4.Runtime.IToken;
 
 /// <summary>
 /// This interface defines a complete listener for a parse tree produced by
-/// <see cref="LangParser"/>.
+/// <see cref="DASParser"/>.
 /// </summary>
 [System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.13.1")]
 [System.CLSCompliant(false)]
-public interface ILangListener : IParseTreeListener {
+public interface IDASListener : IParseTreeListener {
 	/// <summary>
 	/// Enter a parse tree produced by the <c>progLine</c>
-	/// labeled alternative in <see cref="LangParser.prog"/>.
+	/// labeled alternative in <see cref="DASParser.prog"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterProgLine([NotNull] LangParser.ProgLineContext context);
+	void EnterProgLine([NotNull] DASParser.ProgLineContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>progLine</c>
-	/// labeled alternative in <see cref="LangParser.prog"/>.
+	/// labeled alternative in <see cref="DASParser.prog"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitProgLine([NotNull] LangParser.ProgLineContext context);
+	void ExitProgLine([NotNull] DASParser.ProgLineContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="LangParser.functions"/>.
+	/// Enter a parse tree produced by <see cref="DASParser.functions"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterFunctions([NotNull] LangParser.FunctionsContext context);
+	void EnterFunctions([NotNull] DASParser.FunctionsContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="LangParser.functions"/>.
+	/// Exit a parse tree produced by <see cref="DASParser.functions"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitFunctions([NotNull] LangParser.FunctionsContext context);
+	void ExitFunctions([NotNull] DASParser.FunctionsContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="LangParser.function"/>.
+	/// Enter a parse tree produced by <see cref="DASParser.function"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterFunction([NotNull] LangParser.FunctionContext context);
+	void EnterFunction([NotNull] DASParser.FunctionContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="LangParser.function"/>.
+	/// Exit a parse tree produced by <see cref="DASParser.function"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitFunction([NotNull] LangParser.FunctionContext context);
+	void ExitFunction([NotNull] DASParser.FunctionContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>fnBlockLine</c>
-	/// labeled alternative in <see cref="LangParser.fnBlock"/>.
+	/// labeled alternative in <see cref="DASParser.fnBlock"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterFnBlockLine([NotNull] LangParser.FnBlockLineContext context);
+	void EnterFnBlockLine([NotNull] DASParser.FnBlockLineContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>fnBlockLine</c>
-	/// labeled alternative in <see cref="LangParser.fnBlock"/>.
+	/// labeled alternative in <see cref="DASParser.fnBlock"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitFnBlockLine([NotNull] LangParser.FnBlockLineContext context);
+	void ExitFnBlockLine([NotNull] DASParser.FnBlockLineContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>fnBodyLine</c>
-	/// labeled alternative in <see cref="LangParser.fnBody"/>.
+	/// labeled alternative in <see cref="DASParser.fnBody"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterFnBodyLine([NotNull] LangParser.FnBodyLineContext context);
+	void EnterFnBodyLine([NotNull] DASParser.FnBodyLineContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>fnBodyLine</c>
-	/// labeled alternative in <see cref="LangParser.fnBody"/>.
+	/// labeled alternative in <see cref="DASParser.fnBody"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitFnBodyLine([NotNull] LangParser.FnBodyLineContext context);
+	void ExitFnBodyLine([NotNull] DASParser.FnBodyLineContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>fnBodyLineMore</c>
-	/// labeled alternative in <see cref="LangParser.fnBody"/>.
+	/// labeled alternative in <see cref="DASParser.fnBody"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterFnBodyLineMore([NotNull] LangParser.FnBodyLineMoreContext context);
+	void EnterFnBodyLineMore([NotNull] DASParser.FnBodyLineMoreContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>fnBodyLineMore</c>
-	/// labeled alternative in <see cref="LangParser.fnBody"/>.
+	/// labeled alternative in <see cref="DASParser.fnBody"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitFnBodyLineMore([NotNull] LangParser.FnBodyLineMoreContext context);
+	void ExitFnBodyLineMore([NotNull] DASParser.FnBodyLineMoreContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>fnReturnExprLine</c>
-	/// labeled alternative in <see cref="LangParser.fnBody"/>.
+	/// labeled alternative in <see cref="DASParser.fnBody"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterFnReturnExprLine([NotNull] LangParser.FnReturnExprLineContext context);
+	void EnterFnReturnExprLine([NotNull] DASParser.FnReturnExprLineContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>fnReturnExprLine</c>
-	/// labeled alternative in <see cref="LangParser.fnBody"/>.
+	/// labeled alternative in <see cref="DASParser.fnBody"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitFnReturnExprLine([NotNull] LangParser.FnReturnExprLineContext context);
+	void ExitFnReturnExprLine([NotNull] DASParser.FnReturnExprLineContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>fnReturnLine</c>
-	/// labeled alternative in <see cref="LangParser.fnBody"/>.
+	/// labeled alternative in <see cref="DASParser.fnBody"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterFnReturnLine([NotNull] LangParser.FnReturnLineContext context);
+	void EnterFnReturnLine([NotNull] DASParser.FnReturnLineContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>fnReturnLine</c>
-	/// labeled alternative in <see cref="LangParser.fnBody"/>.
+	/// labeled alternative in <see cref="DASParser.fnBody"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitFnReturnLine([NotNull] LangParser.FnReturnLineContext context);
+	void ExitFnReturnLine([NotNull] DASParser.FnReturnLineContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="LangParser.params"/>.
+	/// Enter a parse tree produced by <see cref="DASParser.params"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterParams([NotNull] LangParser.ParamsContext context);
+	void EnterParams([NotNull] DASParser.ParamsContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="LangParser.params"/>.
+	/// Exit a parse tree produced by <see cref="DASParser.params"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitParams([NotNull] LangParser.ParamsContext context);
+	void ExitParams([NotNull] DASParser.ParamsContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>lineStmt</c>
-	/// labeled alternative in <see cref="LangParser.line"/>.
+	/// labeled alternative in <see cref="DASParser.line"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterLineStmt([NotNull] LangParser.LineStmtContext context);
+	void EnterLineStmt([NotNull] DASParser.LineStmtContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>lineStmt</c>
-	/// labeled alternative in <see cref="LangParser.line"/>.
+	/// labeled alternative in <see cref="DASParser.line"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitLineStmt([NotNull] LangParser.LineStmtContext context);
+	void ExitLineStmt([NotNull] DASParser.LineStmtContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>lineIf</c>
-	/// labeled alternative in <see cref="LangParser.line"/>.
+	/// labeled alternative in <see cref="DASParser.line"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterLineIf([NotNull] LangParser.LineIfContext context);
+	void EnterLineIf([NotNull] DASParser.LineIfContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>lineIf</c>
-	/// labeled alternative in <see cref="LangParser.line"/>.
+	/// labeled alternative in <see cref="DASParser.line"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitLineIf([NotNull] LangParser.LineIfContext context);
+	void ExitLineIf([NotNull] DASParser.LineIfContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>lineWhile</c>
-	/// labeled alternative in <see cref="LangParser.line"/>.
+	/// labeled alternative in <see cref="DASParser.line"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterLineWhile([NotNull] LangParser.LineWhileContext context);
+	void EnterLineWhile([NotNull] DASParser.LineWhileContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>lineWhile</c>
-	/// labeled alternative in <see cref="LangParser.line"/>.
+	/// labeled alternative in <see cref="DASParser.line"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitLineWhile([NotNull] LangParser.LineWhileContext context);
+	void ExitLineWhile([NotNull] DASParser.LineWhileContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>lineFor</c>
-	/// labeled alternative in <see cref="LangParser.line"/>.
+	/// labeled alternative in <see cref="DASParser.line"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterLineFor([NotNull] LangParser.LineForContext context);
+	void EnterLineFor([NotNull] DASParser.LineForContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>lineFor</c>
-	/// labeled alternative in <see cref="LangParser.line"/>.
+	/// labeled alternative in <see cref="DASParser.line"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitLineFor([NotNull] LangParser.LineForContext context);
+	void ExitLineFor([NotNull] DASParser.LineForContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>lineEOL</c>
-	/// labeled alternative in <see cref="LangParser.line"/>.
+	/// labeled alternative in <see cref="DASParser.line"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterLineEOL([NotNull] LangParser.LineEOLContext context);
+	void EnterLineEOL([NotNull] DASParser.LineEOLContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>lineEOL</c>
-	/// labeled alternative in <see cref="LangParser.line"/>.
+	/// labeled alternative in <see cref="DASParser.line"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitLineEOL([NotNull] LangParser.LineEOLContext context);
+	void ExitLineEOL([NotNull] DASParser.LineEOLContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>funcInvocLine</c>
-	/// labeled alternative in <see cref="LangParser.funcInvoc"/>.
+	/// labeled alternative in <see cref="DASParser.funcInvoc"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterFuncInvocLine([NotNull] LangParser.FuncInvocLineContext context);
+	void EnterFuncInvocLine([NotNull] DASParser.FuncInvocLineContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>funcInvocLine</c>
-	/// labeled alternative in <see cref="LangParser.funcInvoc"/>.
+	/// labeled alternative in <see cref="DASParser.funcInvoc"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitFuncInvocLine([NotNull] LangParser.FuncInvocLineContext context);
+	void ExitFuncInvocLine([NotNull] DASParser.FuncInvocLineContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>stmtAtrib</c>
-	/// labeled alternative in <see cref="LangParser.stmt"/>.
+	/// labeled alternative in <see cref="DASParser.stmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterStmtAtrib([NotNull] LangParser.StmtAtribContext context);
+	void EnterStmtAtrib([NotNull] DASParser.StmtAtribContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>stmtAtrib</c>
-	/// labeled alternative in <see cref="LangParser.stmt"/>.
+	/// labeled alternative in <see cref="DASParser.stmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitStmtAtrib([NotNull] LangParser.StmtAtribContext context);
+	void ExitStmtAtrib([NotNull] DASParser.StmtAtribContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>stmtInput</c>
-	/// labeled alternative in <see cref="LangParser.stmt"/>.
+	/// labeled alternative in <see cref="DASParser.stmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterStmtInput([NotNull] LangParser.StmtInputContext context);
+	void EnterStmtInput([NotNull] DASParser.StmtInputContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>stmtInput</c>
-	/// labeled alternative in <see cref="LangParser.stmt"/>.
+	/// labeled alternative in <see cref="DASParser.stmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitStmtInput([NotNull] LangParser.StmtInputContext context);
+	void ExitStmtInput([NotNull] DASParser.StmtInputContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>stmtOutput</c>
-	/// labeled alternative in <see cref="LangParser.stmt"/>.
+	/// labeled alternative in <see cref="DASParser.stmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterStmtOutput([NotNull] LangParser.StmtOutputContext context);
+	void EnterStmtOutput([NotNull] DASParser.StmtOutputContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>stmtOutput</c>
-	/// labeled alternative in <see cref="LangParser.stmt"/>.
+	/// labeled alternative in <see cref="DASParser.stmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitStmtOutput([NotNull] LangParser.StmtOutputContext context);
+	void ExitStmtOutput([NotNull] DASParser.StmtOutputContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>lineFuncInvoc</c>
-	/// labeled alternative in <see cref="LangParser.stmt"/>.
+	/// labeled alternative in <see cref="DASParser.stmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterLineFuncInvoc([NotNull] LangParser.LineFuncInvocContext context);
+	void EnterLineFuncInvoc([NotNull] DASParser.LineFuncInvocContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>lineFuncInvoc</c>
-	/// labeled alternative in <see cref="LangParser.stmt"/>.
+	/// labeled alternative in <see cref="DASParser.stmt"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitLineFuncInvoc([NotNull] LangParser.LineFuncInvocContext context);
+	void ExitLineFuncInvoc([NotNull] DASParser.LineFuncInvocContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>inputRead</c>
-	/// labeled alternative in <see cref="LangParser.input"/>.
+	/// labeled alternative in <see cref="DASParser.input"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterInputRead([NotNull] LangParser.InputReadContext context);
+	void EnterInputRead([NotNull] DASParser.InputReadContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>inputRead</c>
-	/// labeled alternative in <see cref="LangParser.input"/>.
+	/// labeled alternative in <see cref="DASParser.input"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitInputRead([NotNull] LangParser.InputReadContext context);
+	void ExitInputRead([NotNull] DASParser.InputReadContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>outputWriteVar</c>
-	/// labeled alternative in <see cref="LangParser.output"/>.
+	/// labeled alternative in <see cref="DASParser.output"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterOutputWriteVar([NotNull] LangParser.OutputWriteVarContext context);
+	void EnterOutputWriteVar([NotNull] DASParser.OutputWriteVarContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>outputWriteVar</c>
-	/// labeled alternative in <see cref="LangParser.output"/>.
+	/// labeled alternative in <see cref="DASParser.output"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitOutputWriteVar([NotNull] LangParser.OutputWriteVarContext context);
+	void ExitOutputWriteVar([NotNull] DASParser.OutputWriteVarContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>outputWriteStr</c>
-	/// labeled alternative in <see cref="LangParser.output"/>.
+	/// labeled alternative in <see cref="DASParser.output"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterOutputWriteStr([NotNull] LangParser.OutputWriteStrContext context);
+	void EnterOutputWriteStr([NotNull] DASParser.OutputWriteStrContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>outputWriteStr</c>
-	/// labeled alternative in <see cref="LangParser.output"/>.
+	/// labeled alternative in <see cref="DASParser.output"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitOutputWriteStr([NotNull] LangParser.OutputWriteStrContext context);
+	void ExitOutputWriteStr([NotNull] DASParser.OutputWriteStrContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>outputWriteExpr</c>
-	/// labeled alternative in <see cref="LangParser.output"/>.
+	/// labeled alternative in <see cref="DASParser.output"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterOutputWriteExpr([NotNull] LangParser.OutputWriteExprContext context);
+	void EnterOutputWriteExpr([NotNull] DASParser.OutputWriteExprContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>outputWriteExpr</c>
-	/// labeled alternative in <see cref="LangParser.output"/>.
+	/// labeled alternative in <see cref="DASParser.output"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitOutputWriteExpr([NotNull] LangParser.OutputWriteExprContext context);
+	void ExitOutputWriteExpr([NotNull] DASParser.OutputWriteExprContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>tipoNumero</c>
-	/// labeled alternative in <see cref="LangParser.tipo"/>.
+	/// labeled alternative in <see cref="DASParser.tipo"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterTipoNumero([NotNull] LangParser.TipoNumeroContext context);
+	void EnterTipoNumero([NotNull] DASParser.TipoNumeroContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>tipoNumero</c>
-	/// labeled alternative in <see cref="LangParser.tipo"/>.
+	/// labeled alternative in <see cref="DASParser.tipo"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitTipoNumero([NotNull] LangParser.TipoNumeroContext context);
+	void ExitTipoNumero([NotNull] DASParser.TipoNumeroContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>tipoTexto</c>
-	/// labeled alternative in <see cref="LangParser.tipo"/>.
+	/// labeled alternative in <see cref="DASParser.tipo"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterTipoTexto([NotNull] LangParser.TipoTextoContext context);
+	void EnterTipoTexto([NotNull] DASParser.TipoTextoContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>tipoTexto</c>
-	/// labeled alternative in <see cref="LangParser.tipo"/>.
+	/// labeled alternative in <see cref="DASParser.tipo"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitTipoTexto([NotNull] LangParser.TipoTextoContext context);
+	void ExitTipoTexto([NotNull] DASParser.TipoTextoContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>ifstIf</c>
-	/// labeled alternative in <see cref="LangParser.ifst"/>.
+	/// labeled alternative in <see cref="DASParser.ifst"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterIfstIf([NotNull] LangParser.IfstIfContext context);
+	void EnterIfstIf([NotNull] DASParser.IfstIfContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>ifstIf</c>
-	/// labeled alternative in <see cref="LangParser.ifst"/>.
+	/// labeled alternative in <see cref="DASParser.ifst"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitIfstIf([NotNull] LangParser.IfstIfContext context);
+	void ExitIfstIf([NotNull] DASParser.IfstIfContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>ifstIfElse</c>
-	/// labeled alternative in <see cref="LangParser.ifst"/>.
+	/// labeled alternative in <see cref="DASParser.ifst"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterIfstIfElse([NotNull] LangParser.IfstIfElseContext context);
+	void EnterIfstIfElse([NotNull] DASParser.IfstIfElseContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>ifstIfElse</c>
-	/// labeled alternative in <see cref="LangParser.ifst"/>.
+	/// labeled alternative in <see cref="DASParser.ifst"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitIfstIfElse([NotNull] LangParser.IfstIfElseContext context);
+	void ExitIfstIfElse([NotNull] DASParser.IfstIfElseContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>whilestWhile</c>
-	/// labeled alternative in <see cref="LangParser.whilest"/>.
+	/// labeled alternative in <see cref="DASParser.whilest"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterWhilestWhile([NotNull] LangParser.WhilestWhileContext context);
+	void EnterWhilestWhile([NotNull] DASParser.WhilestWhileContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>whilestWhile</c>
-	/// labeled alternative in <see cref="LangParser.whilest"/>.
+	/// labeled alternative in <see cref="DASParser.whilest"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitWhilestWhile([NotNull] LangParser.WhilestWhileContext context);
+	void ExitWhilestWhile([NotNull] DASParser.WhilestWhileContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>whilestDoWhile</c>
-	/// labeled alternative in <see cref="LangParser.whilest"/>.
+	/// labeled alternative in <see cref="DASParser.whilest"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterWhilestDoWhile([NotNull] LangParser.WhilestDoWhileContext context);
+	void EnterWhilestDoWhile([NotNull] DASParser.WhilestDoWhileContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>whilestDoWhile</c>
-	/// labeled alternative in <see cref="LangParser.whilest"/>.
+	/// labeled alternative in <see cref="DASParser.whilest"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitWhilestDoWhile([NotNull] LangParser.WhilestDoWhileContext context);
+	void ExitWhilestDoWhile([NotNull] DASParser.WhilestDoWhileContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>forstFor</c>
-	/// labeled alternative in <see cref="LangParser.forst"/>.
+	/// labeled alternative in <see cref="DASParser.forst"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterForstFor([NotNull] LangParser.ForstForContext context);
+	void EnterForstFor([NotNull] DASParser.ForstForContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>forstFor</c>
-	/// labeled alternative in <see cref="LangParser.forst"/>.
+	/// labeled alternative in <see cref="DASParser.forst"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitForstFor([NotNull] LangParser.ForstForContext context);
+	void ExitForstFor([NotNull] DASParser.ForstForContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>blockLine</c>
-	/// labeled alternative in <see cref="LangParser.block"/>.
+	/// labeled alternative in <see cref="DASParser.block"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterBlockLine([NotNull] LangParser.BlockLineContext context);
+	void EnterBlockLine([NotNull] DASParser.BlockLineContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>blockLine</c>
-	/// labeled alternative in <see cref="LangParser.block"/>.
+	/// labeled alternative in <see cref="DASParser.block"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitBlockLine([NotNull] LangParser.BlockLineContext context);
+	void ExitBlockLine([NotNull] DASParser.BlockLineContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>condRelop</c>
-	/// labeled alternative in <see cref="LangParser.cond"/>.
+	/// labeled alternative in <see cref="DASParser.cond"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterCondRelop([NotNull] LangParser.CondRelopContext context);
+	void EnterCondRelop([NotNull] DASParser.CondRelopContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>condRelop</c>
-	/// labeled alternative in <see cref="LangParser.cond"/>.
+	/// labeled alternative in <see cref="DASParser.cond"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitCondRelop([NotNull] LangParser.CondRelopContext context);
+	void ExitCondRelop([NotNull] DASParser.CondRelopContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>condExpr</c>
-	/// labeled alternative in <see cref="LangParser.cond"/>.
+	/// labeled alternative in <see cref="DASParser.cond"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterCondExpr([NotNull] LangParser.CondExprContext context);
+	void EnterCondExpr([NotNull] DASParser.CondExprContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>condExpr</c>
-	/// labeled alternative in <see cref="LangParser.cond"/>.
+	/// labeled alternative in <see cref="DASParser.cond"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitCondExpr([NotNull] LangParser.CondExprContext context);
+	void ExitCondExpr([NotNull] DASParser.CondExprContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>condAnd</c>
-	/// labeled alternative in <see cref="LangParser.cond"/>.
+	/// labeled alternative in <see cref="DASParser.cond"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterCondAnd([NotNull] LangParser.CondAndContext context);
+	void EnterCondAnd([NotNull] DASParser.CondAndContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>condAnd</c>
-	/// labeled alternative in <see cref="LangParser.cond"/>.
+	/// labeled alternative in <see cref="DASParser.cond"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitCondAnd([NotNull] LangParser.CondAndContext context);
+	void ExitCondAnd([NotNull] DASParser.CondAndContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>condOr</c>
-	/// labeled alternative in <see cref="LangParser.cond"/>.
+	/// labeled alternative in <see cref="DASParser.cond"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterCondOr([NotNull] LangParser.CondOrContext context);
+	void EnterCondOr([NotNull] DASParser.CondOrContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>condOr</c>
-	/// labeled alternative in <see cref="LangParser.cond"/>.
+	/// labeled alternative in <see cref="DASParser.cond"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitCondOr([NotNull] LangParser.CondOrContext context);
+	void ExitCondOr([NotNull] DASParser.CondOrContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>condNot</c>
-	/// labeled alternative in <see cref="LangParser.cond"/>.
+	/// labeled alternative in <see cref="DASParser.cond"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterCondNot([NotNull] LangParser.CondNotContext context);
+	void EnterCondNot([NotNull] DASParser.CondNotContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>condNot</c>
-	/// labeled alternative in <see cref="LangParser.cond"/>.
+	/// labeled alternative in <see cref="DASParser.cond"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitCondNot([NotNull] LangParser.CondNotContext context);
+	void ExitCondNot([NotNull] DASParser.CondNotContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>atribVar</c>
-	/// labeled alternative in <see cref="LangParser.atrib"/>.
+	/// labeled alternative in <see cref="DASParser.atrib"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterAtribVar([NotNull] LangParser.AtribVarContext context);
+	void EnterAtribVar([NotNull] DASParser.AtribVarContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>atribVar</c>
-	/// labeled alternative in <see cref="LangParser.atrib"/>.
+	/// labeled alternative in <see cref="DASParser.atrib"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitAtribVar([NotNull] LangParser.AtribVarContext context);
+	void ExitAtribVar([NotNull] DASParser.AtribVarContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>atribVarStr</c>
-	/// labeled alternative in <see cref="LangParser.atrib"/>.
+	/// labeled alternative in <see cref="DASParser.atrib"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterAtribVarStr([NotNull] LangParser.AtribVarStrContext context);
+	void EnterAtribVarStr([NotNull] DASParser.AtribVarStrContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>atribVarStr</c>
-	/// labeled alternative in <see cref="LangParser.atrib"/>.
+	/// labeled alternative in <see cref="DASParser.atrib"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitAtribVarStr([NotNull] LangParser.AtribVarStrContext context);
+	void ExitAtribVarStr([NotNull] DASParser.AtribVarStrContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>exprPlus</c>
-	/// labeled alternative in <see cref="LangParser.expr"/>.
+	/// labeled alternative in <see cref="DASParser.expr"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterExprPlus([NotNull] LangParser.ExprPlusContext context);
+	void EnterExprPlus([NotNull] DASParser.ExprPlusContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>exprPlus</c>
-	/// labeled alternative in <see cref="LangParser.expr"/>.
+	/// labeled alternative in <see cref="DASParser.expr"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitExprPlus([NotNull] LangParser.ExprPlusContext context);
+	void ExitExprPlus([NotNull] DASParser.ExprPlusContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>exprMinus</c>
-	/// labeled alternative in <see cref="LangParser.expr"/>.
+	/// labeled alternative in <see cref="DASParser.expr"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterExprMinus([NotNull] LangParser.ExprMinusContext context);
+	void EnterExprMinus([NotNull] DASParser.ExprMinusContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>exprMinus</c>
-	/// labeled alternative in <see cref="LangParser.expr"/>.
+	/// labeled alternative in <see cref="DASParser.expr"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitExprMinus([NotNull] LangParser.ExprMinusContext context);
+	void ExitExprMinus([NotNull] DASParser.ExprMinusContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>exprTerm</c>
-	/// labeled alternative in <see cref="LangParser.expr"/>.
+	/// labeled alternative in <see cref="DASParser.expr"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterExprTerm([NotNull] LangParser.ExprTermContext context);
+	void EnterExprTerm([NotNull] DASParser.ExprTermContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>exprTerm</c>
-	/// labeled alternative in <see cref="LangParser.expr"/>.
+	/// labeled alternative in <see cref="DASParser.expr"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitExprTerm([NotNull] LangParser.ExprTermContext context);
+	void ExitExprTerm([NotNull] DASParser.ExprTermContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>termMult</c>
-	/// labeled alternative in <see cref="LangParser.term"/>.
+	/// labeled alternative in <see cref="DASParser.term"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterTermMult([NotNull] LangParser.TermMultContext context);
+	void EnterTermMult([NotNull] DASParser.TermMultContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>termMult</c>
-	/// labeled alternative in <see cref="LangParser.term"/>.
+	/// labeled alternative in <see cref="DASParser.term"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitTermMult([NotNull] LangParser.TermMultContext context);
+	void ExitTermMult([NotNull] DASParser.TermMultContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>termDiv</c>
-	/// labeled alternative in <see cref="LangParser.term"/>.
+	/// labeled alternative in <see cref="DASParser.term"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterTermDiv([NotNull] LangParser.TermDivContext context);
+	void EnterTermDiv([NotNull] DASParser.TermDivContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>termDiv</c>
-	/// labeled alternative in <see cref="LangParser.term"/>.
+	/// labeled alternative in <see cref="DASParser.term"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitTermDiv([NotNull] LangParser.TermDivContext context);
+	void ExitTermDiv([NotNull] DASParser.TermDivContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>termFactor</c>
-	/// labeled alternative in <see cref="LangParser.term"/>.
+	/// labeled alternative in <see cref="DASParser.term"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterTermFactor([NotNull] LangParser.TermFactorContext context);
+	void EnterTermFactor([NotNull] DASParser.TermFactorContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>termFactor</c>
-	/// labeled alternative in <see cref="LangParser.term"/>.
+	/// labeled alternative in <see cref="DASParser.term"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitTermFactor([NotNull] LangParser.TermFactorContext context);
+	void ExitTermFactor([NotNull] DASParser.TermFactorContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>factorExpr</c>
-	/// labeled alternative in <see cref="LangParser.factor"/>.
+	/// labeled alternative in <see cref="DASParser.factor"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterFactorExpr([NotNull] LangParser.FactorExprContext context);
+	void EnterFactorExpr([NotNull] DASParser.FactorExprContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>factorExpr</c>
-	/// labeled alternative in <see cref="LangParser.factor"/>.
+	/// labeled alternative in <see cref="DASParser.factor"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitFactorExpr([NotNull] LangParser.FactorExprContext context);
+	void ExitFactorExpr([NotNull] DASParser.FactorExprContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>factorVar</c>
-	/// labeled alternative in <see cref="LangParser.factor"/>.
+	/// labeled alternative in <see cref="DASParser.factor"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterFactorVar([NotNull] LangParser.FactorVarContext context);
+	void EnterFactorVar([NotNull] DASParser.FactorVarContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>factorVar</c>
-	/// labeled alternative in <see cref="LangParser.factor"/>.
+	/// labeled alternative in <see cref="DASParser.factor"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitFactorVar([NotNull] LangParser.FactorVarContext context);
+	void ExitFactorVar([NotNull] DASParser.FactorVarContext context);
 	/// <summary>
 	/// Enter a parse tree produced by the <c>factorNum</c>
-	/// labeled alternative in <see cref="LangParser.factor"/>.
+	/// labeled alternative in <see cref="DASParser.factor"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterFactorNum([NotNull] LangParser.FactorNumContext context);
+	void EnterFactorNum([NotNull] DASParser.FactorNumContext context);
 	/// <summary>
 	/// Exit a parse tree produced by the <c>factorNum</c>
-	/// labeled alternative in <see cref="LangParser.factor"/>.
+	/// labeled alternative in <see cref="DASParser.factor"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitFactorNum([NotNull] LangParser.FactorNumContext context);
+	void ExitFactorNum([NotNull] DASParser.FactorNumContext context);
 }
